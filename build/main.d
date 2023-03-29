@@ -86,9 +86,6 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
  /Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h \
  /Users/finndooley/butano/butano/include/bn_sprite_palette_ptr.h \
  /Users/finndooley/butano/butano/include/bn_sprite_palette_item.h \
- /Users/finndooley/butano/butano/include/bn_sprite_tiles_ptr.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_snek.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h \
  /Users/finndooley/butano/butano/include/bn_bg_palettes.h \
  /Users/finndooley/butano/butano/include/bn_bg_palette_ptr.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
@@ -105,7 +102,8 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
  /Users/finndooley/butano/butano/include/bn_optional.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
- /Users/finndooley/butano/butano/include/bn_unique_ptr.h
+ /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h
 /Users/finndooley/butano/butano/include/bn_core.h:
 /Users/finndooley/butano/butano/include/bn_span.h:
 /Users/finndooley/butano/butano/include/bn_array.h:
@@ -193,9 +191,6 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
 /Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h:
 /Users/finndooley/butano/butano/include/bn_sprite_palette_ptr.h:
 /Users/finndooley/butano/butano/include/bn_sprite_palette_item.h:
-/Users/finndooley/butano/butano/include/bn_sprite_tiles_ptr.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_snek.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h:
 /Users/finndooley/butano/butano/include/bn_bg_palettes.h:
 /Users/finndooley/butano/butano/include/bn_bg_palette_ptr.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
@@ -213,3 +208,4 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:

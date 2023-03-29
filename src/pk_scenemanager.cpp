@@ -1,4 +1,7 @@
 #include "pk_title_scene.h"
+#include "pk_title_scene2.h"
+
+
 #include "pk_scene.h"
 #include "bn_string_view.h"
 #include "bn_optional.h"
@@ -7,6 +10,7 @@
 #include "bn_string.h"
 #include "bn_log.h"
 #include "pk_scenemanager.h"
+#include "pk_common.h"
 
 // namespace pk {
 
@@ -24,8 +28,15 @@
 
 // }
 
-void pk::SceneManager::load() {
-    pk::SceneManager::cur_scn.reset(new pk::scenes::TitleScene());
+void pk::SceneManager::load(int index) {
+    pk::common::load_scn = false;
+    switch (index) {
+        case 0:
+        pk::SceneManager::cur_scn.reset(new pk::scenes::TitleScene());
+        break;
+        case 1:
+        pk::SceneManager::cur_scn.reset(new pk::scenes::TitleScene2());
+    }
     cur_bg = cur_scn->background->create_bg(0, 0);
     cur_scn->main();
 }

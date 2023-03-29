@@ -24,9 +24,6 @@
 #include "bn_sprite_palette_ptr.h"
 #include "bn_sprite_palette_item.h"
 #include "bn_display.h"
-#include "bn_sprite_tiles_ptr.h"
-#include "bn_sprite_items_snek.h"
-#include "bn_sprite_items_apple.h"
 
 #include "bn_bg_palettes.h"
 #include "bn_bg_palette_ptr.h"
@@ -36,19 +33,20 @@
 
 #include "pk_title_scene.h"
 #include "pk_scenemanager.h"
-
-using namespace bn;
+#include "pk_common.h"
 
 int main()
 {
-    core::init();
+    bn::core::init();
 
-    // pk::scenes::TitleScene test("image", &(bn::regular_bg_items::background));
-
-    pk::SceneManager::load();
+    // pk::SceneManager::load();
+    
+    pk::SceneManager::load(pk::common::scn_to_load);
 
     while(true)
     {
-        core::update();
+        pk::SceneManager::cur_scn->main();
+        if (pk::common::load_scn) pk::SceneManager::load(pk::common::scn_to_load);
+        bn::core::update();
     }
 }

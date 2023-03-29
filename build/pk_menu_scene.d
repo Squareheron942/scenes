@@ -40,12 +40,6 @@ pk_menu_scene.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
  /Users/finndooley/butano/butano/include/bn_tile.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h \
- /Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h \
- /Users/finndooley/butano/butano/include/bn_fixed.h \
- /Users/finndooley/butano/butano/include/bn_sprite_shape_size.h \
- /Users/finndooley/butano/butano/include/bn_sprite_tiles_item.h \
- /Users/finndooley/butano/butano/include/bn_sprite_palette_item.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
  /Users/finndooley/butano/butano/include/bn_log.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
@@ -90,12 +84,6 @@ pk_menu_scene.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
 /Users/finndooley/butano/butano/include/bn_tile.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h:
-/Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h:
-/Users/finndooley/butano/butano/include/bn_fixed.h:
-/Users/finndooley/butano/butano/include/bn_sprite_shape_size.h:
-/Users/finndooley/butano/butano/include/bn_sprite_tiles_item.h:
-/Users/finndooley/butano/butano/include/bn_sprite_palette_item.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
 /Users/finndooley/butano/butano/include/bn_log.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:

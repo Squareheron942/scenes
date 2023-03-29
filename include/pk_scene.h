@@ -3,7 +3,6 @@
 
 #include "bn_string_view.h"
 #include "bn_regular_bg_item.h"
-#include "bn_sprite_items_apple.h"
 #include "bn_optional.h"
 #include "bn_log.h"
 

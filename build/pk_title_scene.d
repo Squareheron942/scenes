@@ -39,21 +39,23 @@ pk_title_scene.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
  /Users/finndooley/butano/butano/include/bn_tile.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_background.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h \
- /Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h \
- /Users/finndooley/butano/butano/include/bn_fixed.h \
- /Users/finndooley/butano/butano/include/bn_sprite_shape_size.h \
- /Users/finndooley/butano/butano/include/bn_sprite_tiles_item.h \
- /Users/finndooley/butano/butano/include/bn_sprite_palette_item.h \
  /Users/finndooley/butano/butano/include/bn_log.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/butano/butano/include/bn_string.h \
- /Users/finndooley/butano/butano/include/bn_string_view.h
+ /Users/finndooley/butano/butano/include/bn_string_view.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_core.h \
+ /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h \
+ /Users/finndooley/butano/butano/include/bn_keypad.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h
 /Users/finndooley/butano/butano/include/bn_regular_bg_item.h:
 /Users/finndooley/butano/butano/include/bn_fixed.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
@@ -93,18 +95,20 @@ pk_title_scene.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
 /Users/finndooley/butano/butano/include/bn_tile.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_background.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_sprite_items_apple.h:
-/Users/finndooley/Code/C++/GBA/scenes/include/bn_sprite_item.h:
-/Users/finndooley/butano/butano/include/bn_fixed.h:
-/Users/finndooley/butano/butano/include/bn_sprite_shape_size.h:
-/Users/finndooley/butano/butano/include/bn_sprite_tiles_item.h:
-/Users/finndooley/butano/butano/include/bn_sprite_palette_item.h:
 /Users/finndooley/butano/butano/include/bn_log.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/butano/butano/include/bn_string.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
+/Users/finndooley/butano/butano/include/bn_unique_ptr.h:
+/Users/finndooley/butano/butano/include/bn_core.h:
+/Users/finndooley/butano/butano/include/bn_vblank_callback_type.h:
+/Users/finndooley/butano/butano/include/bn_keypad.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:

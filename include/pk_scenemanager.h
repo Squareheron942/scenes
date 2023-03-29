@@ -14,7 +14,7 @@ class SceneManager {
     public:
         static inline bn::unique_ptr<pk::Scene> cur_scn;
         static inline bn::optional<bn::regular_bg_ptr> cur_bg;
-        static void load();
+        static void load(int index);
 };
 
 }
