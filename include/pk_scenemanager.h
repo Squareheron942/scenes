@@ -7,6 +7,7 @@
 #include "bn_optional.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_unique_ptr.h"
+#include "bn_array.h"
 
 namespace pk {
 
@@ -15,6 +16,7 @@ class SceneManager {
         static inline bn::unique_ptr<pk::Scene> cur_scn;
         static inline bn::optional<bn::regular_bg_ptr> cur_bg;
         static void load(int index);
+        static void load(bn::string_view name);
 };
 
 }

@@ -39,13 +39,10 @@ int main()
 {
     bn::core::init();
 
-    // pk::SceneManager::load();
-    
     pk::SceneManager::load(pk::common::scn_to_load);
 
     while(true)
     {
-        pk::SceneManager::cur_scn->main();
         if (pk::common::load_scn) pk::SceneManager::load(pk::common::scn_to_load);
         bn::core::update();
     }

@@ -18,7 +18,7 @@ void pk::scenes::TitleScene::main() {
     while(true) {
         if (bn::keypad::a_pressed()) {
             pk::common::load_scn = true;
-            pk::common::scn_to_load = 1;
+            pk::common::scn_to_load = bn::string_view("SAVE_SEL");
             return;
         }
         bn::core::update();

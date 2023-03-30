@@ -52,6 +52,7 @@ pk_title_scene2.o: \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_array.h \
  /Users/finndooley/butano/butano/include/bn_core.h \
  /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h \
  /Users/finndooley/butano/butano/include/bn_keypad.h \
@@ -108,6 +109,7 @@ pk_title_scene2.o: \
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
+/Users/finndooley/butano/butano/include/bn_array.h:
 /Users/finndooley/butano/butano/include/bn_core.h:
 /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h:
 /Users/finndooley/butano/butano/include/bn_keypad.h:
