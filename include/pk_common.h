@@ -30,6 +30,7 @@ public:
 static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
 static inline bool load_scn = true;
 static inline uint16_t num_scn = 2;
+static inline pk::sav_data perm_sav;
 static inline pk::sav_data temp_sav = {
     .has_sav = false,
     .gender = false,
