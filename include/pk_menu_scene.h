@@ -9,7 +9,7 @@ namespace pk {
     namespace scene_types {
         class MenuScene : public pk::Scene {
             public:
-            MenuScene(bn::string_view _name, const bn::regular_bg_item * _background);
+            MenuScene(bn::string_view _name, const bn::regular_bg_item& _background);
         };
     }
 }

@@ -11,9 +11,16 @@
 #include "pk_common.h"
 #include "bn_sram.h"
 
-pk::scenes::SaveSel::SaveSel() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), &(bn::regular_bg_items::background)) {};
+pk::scenes::SaveSel::SaveSel() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), bn::regular_bg_items::background) {};
 
 void pk::scenes::SaveSel::main() {
+    bn::sram::read(pk::common::perm_sav);
+
+    if (pk::common::perm_sav.has_sav) {
+
+    } else {
+        
+    }
     while(true) {
         
         bn::core::update();

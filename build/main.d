@@ -100,6 +100,11 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txtbox_tiles.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
+ /Users/finndooley/butano/butano/include/bn_size.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
@@ -206,6 +211,11 @@ main.o: /Users/finndooley/Code/C++/GBA/scenes/src/main.cpp \
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txtbox_tiles.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
+/Users/finndooley/butano/butano/include/bn_size.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:

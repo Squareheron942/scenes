@@ -42,6 +42,11 @@ pk_menu_scene.o: \
  /Users/finndooley/butano/butano/include/bn_tile.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
  /Users/finndooley/butano/butano/include/bn_log.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txtbox_tiles.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
+ /Users/finndooley/butano/butano/include/bn_size.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:
@@ -86,5 +91,10 @@ pk_menu_scene.o: \
 /Users/finndooley/butano/butano/include/bn_tile.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
 /Users/finndooley/butano/butano/include/bn_log.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txtbox_tiles.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
+/Users/finndooley/butano/butano/include/bn_size.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:

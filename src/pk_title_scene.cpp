@@ -10,7 +10,7 @@
 #include "bn_keypad.h"
 #include "pk_common.h"
 
-pk::scenes::TitleScene::TitleScene() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), &(bn::regular_bg_items::titlebg)) {};
+pk::scenes::TitleScene::TitleScene() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), bn::regular_bg_items::titlebg) {};
 
 void pk::scenes::TitleScene::main() {
     pk::SceneManager::cur_bg.value().set_position(8, 48);

@@ -44,10 +44,12 @@ static inline pk::sav_data temp_sav = {
         .frame_type = 0
     }
 };
+
 constexpr static const bn::string_view names[] = {
     bn::string_view("TITLE_SCREEN"),
     bn::string_view("SAVE_SEL")
 };
+
 template <class Type>
 static int indexOf(Type arr[], uint16_t length, Type value) {
     for (uint16_t i = 0; i < length; i++) {

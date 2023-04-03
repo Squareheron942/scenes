@@ -3,7 +3,7 @@
 #include "bn_string_view.h"
 #include "bn_core.h"
 
-pk::scenes::NotFoundScene::NotFoundScene() : pk::scene_types::MenuScene(bn::string_view("NOT_FOUND"), &(bn::regular_bg_items::titlebg)) {};
+pk::scenes::NotFoundScene::NotFoundScene() : pk::scene_types::MenuScene(bn::string_view("NOT_FOUND"), bn::regular_bg_items::titlebg) {};
 
 void pk::scenes::NotFoundScene::main() {
     while(true) bn::core::update();
