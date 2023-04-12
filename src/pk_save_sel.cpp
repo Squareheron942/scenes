@@ -14,9 +14,11 @@
 pk::scenes::SaveSel::SaveSel() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), bn::regular_bg_items::background) {};
 
 void pk::scenes::SaveSel::main() {
-    bn::sram::read(pk::common::perm_sav);
 
-    if (pk::common::perm_sav.has_sav) {
+    bn::sram::read(pk::common::sav);
+    if (!pk::common::sav.flags.has_sav) pk::common::sav = pk::common::temp_sav;
+
+    if (pk::common::sav.flags.has_sav) {
 
     } else {
         

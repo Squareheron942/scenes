@@ -6,9 +6,10 @@
 #include "bn_optional.h"
 #include "bn_log.h"
 #include "bn_regular_bg_map_item.h"
-#include "bn_regular_bg_tiles_items_txtbox_tiles.h"
 #include "bn_regular_bg_map_cell.h"
 #include "bn_size.h"
+
+#include "pk_txtbox.h"
 
 namespace pk {
 
