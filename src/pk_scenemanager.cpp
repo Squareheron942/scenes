@@ -1,6 +1,7 @@
 // individual scenes
 #include "pk_title_scene.h"
 #include "pk_save_sel.h"
+#include "pk_not_found_scene.h"
 
 // utilities
 #include "pk_scene.h"
@@ -11,9 +12,7 @@
 #include "bn_string_view.h"
 #include "bn_optional.h"
 #include "bn_regular_bg_ptr.h"
-#include "bn_unique_ptr.h"
 #include "bn_string.h"
-#include "bn_log.h"
 #include "bn_unordered_map.h"
 #include "bn_core.h"
 #include "bn_regular_bg_map_item.h"
@@ -28,6 +27,7 @@ void pk::SceneManager::load(int index) {
             pk::SceneManager::cur_scn.reset(new pk::scenes::SaveSel());
             break;
         default:
+            pk::SceneManager::cur_scn.reset(new pk::scenes::NotFoundScene());
             break;
     }
     bn::core::update();
