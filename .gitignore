@@ -2,3 +2,4 @@
 *.elf
 *.gba
 *.sav
+.DS_Store
