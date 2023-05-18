@@ -24,7 +24,10 @@ void pk::scenes::SaveSel::main() {
         
     }
     while(true) {
-        
+        if (bn::keypad::a_pressed()) {
+            pk::SceneManager::set_load(bn::to_string<64>("TITLE_SCREEN"), 1, 1);
+            return;
+        }
         bn::core::update();
     }
 }

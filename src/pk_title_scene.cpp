@@ -10,15 +10,14 @@
 #include "bn_keypad.h"
 #include "pk_common.h"
 
-pk::scenes::TitleScene::TitleScene() : pk::scene_types::MenuScene(bn::string_view("titlescreen"), bn::regular_bg_items::titlebg) {};
+pk::scenes::TitleScene::TitleScene() : pk::scene_types::MenuScene(bn::string_view("TITLE_SCREEN"), bn::regular_bg_items::titlebg) {};
 
 void pk::scenes::TitleScene::main() {
     pk::SceneManager::cur_bg.value().set_position(8, 48);
-    bn::log(bn::to_string<16>("scene1"));
+    bn::log(bn::to_string<16>("Title Screen"));
     while(true) {
         if (bn::keypad::a_pressed()) {
-            pk::common::load_scn = true;
-            pk::common::scn_to_load = bn::string_view("SAVE_SEL");
+            pk::SceneManager::set_load(bn::to_string<18>("TITLE_SCREEN"), 1, 1);
             return;
         }
         bn::core::update();

@@ -37,8 +37,7 @@ bn_hdma_manager.o: \
  /Users/finndooley/butano/butano/include/bn_string_fwd.h \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
- /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h
+ /Users/finndooley/butano/butano/include/bn_functional.h
 /Users/finndooley/butano/butano/src/bn_hdma_manager.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_common.h:
@@ -77,4 +76,3 @@ bn_hdma_manager.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:

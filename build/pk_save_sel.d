@@ -47,65 +47,22 @@ pk_save_sel.o: /Users/finndooley/Code/C++/GBA/scenes/src/pk_save_sel.cpp \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_size.h \
- /Users/finndooley/Code/C++/GBA/scenes/include/pk_txtbox.h \
- /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
- /Users/finndooley/butano/butano/include/bn_regular_bg_map_ptr.h \
- /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell_info.h \
- /Users/finndooley/butano/butano/include/bn_bg_palette_item.h \
- /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
- /Users/finndooley/butano/butano/include/bn_point.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal1.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal2.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal3.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal4.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal5.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal6.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal7.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal8.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal9.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal10.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal11.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal12.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal13.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal14.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal15.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal16.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal17.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal18.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal19.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal20.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h \
- /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt2.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt3.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt4.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt5.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt6.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt7.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt8.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt9.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt10.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt11.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt12.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt13.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt14.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt15.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt16.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt17.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt18.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt19.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt20.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/butano/butano/include/bn_string.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
  /Users/finndooley/butano/butano/include/bn_array.h \
+ /Users/finndooley/butano/butano/include/bn_fixed.h \
+ /Users/finndooley/butano/butano/include/bn_point.h \
  /Users/finndooley/butano/butano/include/bn_core.h \
  /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h \
  /Users/finndooley/butano/butano/include/bn_keypad.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
+ /Users/finndooley/butano/butano/include/bn_random.h \
+ /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/butano/butano/include/bn_sram.h \
  /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h \
  /Users/finndooley/butano/butano/include/bn_common.h
@@ -157,65 +114,22 @@ pk_save_sel.o: /Users/finndooley/Code/C++/GBA/scenes/src/pk_save_sel.cpp \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_size.h:
-/Users/finndooley/Code/C++/GBA/scenes/include/pk_txtbox.h:
-/Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
-/Users/finndooley/butano/butano/include/bn_regular_bg_map_ptr.h:
-/Users/finndooley/butano/butano/include/bn_regular_bg_map_cell_info.h:
-/Users/finndooley/butano/butano/include/bn_bg_palette_item.h:
-/Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
-/Users/finndooley/butano/butano/include/bn_point.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal1.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal2.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal3.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal4.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal5.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal6.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal7.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal8.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal9.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal10.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal11.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal12.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal13.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal14.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal15.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal16.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal17.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal18.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal19.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal20.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h:
-/Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt2.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt3.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt4.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt5.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt6.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt7.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt8.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt9.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt10.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt11.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt12.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt13.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt14.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt15.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt16.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt17.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt18.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt19.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt20.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/butano/butano/include/bn_string.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
 /Users/finndooley/butano/butano/include/bn_array.h:
+/Users/finndooley/butano/butano/include/bn_fixed.h:
+/Users/finndooley/butano/butano/include/bn_point.h:
 /Users/finndooley/butano/butano/include/bn_core.h:
 /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h:
 /Users/finndooley/butano/butano/include/bn_keypad.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
+/Users/finndooley/butano/butano/include/bn_random.h:
+/Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/butano/butano/include/bn_sram.h:
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h:
 /Users/finndooley/butano/butano/include/bn_common.h:

@@ -9,6 +9,7 @@
 
 
 #include "pk_common.h"
+#include "pk_scenemanager.h"
 
 #include "bn_bg_palette_items_txtpal1.h"
 #include "bn_bg_palette_items_txtpal2.h"
@@ -108,7 +109,8 @@ const bn::regular_bg_tiles_item txtboxtiles[] = {
 class TextBox {
     int width, height, x, y;
     bn::regular_bg_map_ptr ui_map;
-    TextBox(bn::regular_bg_ptr &map, int width, int height, int x, int y) : width(width), height(height), x(x), y(y), ui_map(map.map()) {
+    TextBox(int width, int height, int x, int y) : width(width), height(height), x(x), y(y) {
+        ui_map = pk::SceneManager::ui_layer.create_bg().map();
         ui_map.set_tiles(txtboxtiles[pk::common::sav.settings.frame_type]);
     }
 };

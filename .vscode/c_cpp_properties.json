@@ -1,21 +1,25 @@
 {
     "configurations": [
         {
-            "name": "Mac",
+            "name": "GBA",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/Users/finndooley/butano/butano/**"
+                "/Users/finndooley/butano/butano/include"
             ],
             "defines": [],
-            "macFrameworkPath": [
-                "/System/Library/Frameworks",
-                "/Library/Frameworks"
-            ],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
-            "cppStandard": "c++98",
-            "intelliSenseMode": "macos-clang-x64",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "compilerPath": "/opt/devkitpro/devkitarm/bin/arm-none-eabi-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "macos-gcc-arm",
+            "compilerArgs": [
+                "-O2", "-Wall", "-Wextra", "-Wpedantic", "-Wshadow", "-Wundef",
+                "-Wunused-parameter", "-Wmisleading-indentation",
+                "-Wduplicated-cond", "-Wduplicated-branches", "-Wlogical-op",
+                "-Wnull-dereference", "-Wswitch-default", "-Wstack-usage=16384",
+                "-ffast-math", "-ffunction-sections", "-fdata-sections",
+                "-Wuseless-cast", "-Wnon-virtual-dtor", "-Woverloaded-virtual",
+                "-fno-rtti", "-fno-exceptions"
+            ]
         }
     ],
     "version": 4

@@ -9,7 +9,7 @@ namespace pk
 namespace scenes
 {
 
-class NotFoundScene : pk::scene_types::MenuScene {
+class NotFoundScene : public pk::scene_types::MenuScene {
     public:
         NotFoundScene();
         void main();

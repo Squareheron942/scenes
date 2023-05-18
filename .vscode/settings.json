@@ -1,6 +1,9 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "code-runner.executorMap": {
         "cpp": "printf '\\e[2J\\e[3J\\e[H' && cd /Users/finndooley/Code/C++/GBA/scenes && make -j4 && echo"
+    },
+    "files.associations": {
+        "typeinfo": "cpp"
     }
 }

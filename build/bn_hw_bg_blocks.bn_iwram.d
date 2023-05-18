@@ -14,7 +14,6 @@ bn_hw_bg_blocks.bn_iwram.o: \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
  /Users/finndooley/butano/butano/include/bn_alignment.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_compression_type.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_tonc.h \
@@ -53,7 +52,6 @@ bn_hw_bg_blocks.bn_iwram.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_compression_type.h:
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h:

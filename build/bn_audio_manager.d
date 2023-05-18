@@ -7,12 +7,12 @@ bn_audio_manager.o: \
  /Users/finndooley/butano/butano/include/../hw/include/bn_hw_common.h \
  /Users/finndooley/butano/butano/include/bn_fixed_fwd.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
- /Users/finndooley/butano/butano/include/bn_type_traits.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
  /Users/finndooley/butano/butano/include/bn_memory.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
  /Users/finndooley/butano/butano/include/bn_assert.h \
+ /Users/finndooley/butano/butano/include/bn_type_traits.h \
  /Users/finndooley/butano/butano/include/bn_config_assert.h \
  /Users/finndooley/butano/butano/include/bn_config_doxygen.h \
  /Users/finndooley/butano/butano/include/bn_sstream.h \
@@ -60,12 +60,12 @@ bn_audio_manager.o: \
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_common.h:
 /Users/finndooley/butano/butano/include/bn_fixed_fwd.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
-/Users/finndooley/butano/butano/include/bn_type_traits.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
 /Users/finndooley/butano/butano/include/bn_memory.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
 /Users/finndooley/butano/butano/include/bn_assert.h:
+/Users/finndooley/butano/butano/include/bn_type_traits.h:
 /Users/finndooley/butano/butano/include/bn_config_assert.h:
 /Users/finndooley/butano/butano/include/bn_config_doxygen.h:
 /Users/finndooley/butano/butano/include/bn_sstream.h:

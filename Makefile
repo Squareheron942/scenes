@@ -37,7 +37,7 @@ AUDIO       :=  audio
 DMGAUDIO    :=  dmg_audio
 ROMTITLE    :=  snekGBA
 ROMCODE     :=  SBTP
-USERFLAGS   :=  -Iinclude -w
+USERFLAGS   :=  -Iinclude -O2 -Wstack-usage=16384 -Wno-reorder -ffast-math -ffunction-sections -fdata-sections -Wuseless-cast -Wnon-virtual-dtor -Woverloaded-virtual -fno-rtti -fno-exceptions
 USERASFLAGS :=  
 USERLDFLAGS :=  
 USERLIBDIRS :=  

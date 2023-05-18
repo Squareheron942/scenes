@@ -13,7 +13,6 @@ bn_generic_pool.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_generic_pool_fwd.h
@@ -30,7 +29,6 @@ bn_generic_pool.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_generic_pool_fwd.h:

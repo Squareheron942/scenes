@@ -15,7 +15,6 @@ bn_color_effect.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -27,6 +26,7 @@ bn_color_effect.o: \
  /Users/finndooley/butano/butano/include/bn_reciprocal_lut.h \
  /Users/finndooley/butano/butano/include/bn_rule_of_three_approximation.h \
  /Users/finndooley/butano/butano/include/bn_memory.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
  /Users/finndooley/butano/butano/include/bn_config_log.h \
@@ -69,7 +69,6 @@ bn_color_effect.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
@@ -81,6 +80,7 @@ bn_color_effect.o: \
 /Users/finndooley/butano/butano/include/bn_reciprocal_lut.h:
 /Users/finndooley/butano/butano/include/bn_rule_of_three_approximation.h:
 /Users/finndooley/butano/butano/include/bn_memory.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
 /Users/finndooley/butano/butano/include/bn_config_log.h:

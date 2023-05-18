@@ -9,8 +9,6 @@
 #include "bn_regular_bg_map_cell.h"
 #include "bn_size.h"
 
-#include "pk_txtbox.h"
-
 namespace pk {
 
 class Scene {
@@ -19,8 +17,10 @@ class Scene {
     bn::regular_bg_map_cell cells[600];
     bn::regular_bg_map_item ui_bg; // covers the entire background
     const bn::regular_bg_item background;
-    int type = 0;
+    int type;
+    bool has_bg = true;
     virtual void main() {};
+    virtual ~Scene() {};
 
     Scene(bn::string_view _name, int _type, const bn::regular_bg_item& _background) : name(_name), type(_type), background(_background), ui_bg(cells[0], bn::size(32, 32)) {};
 

@@ -12,7 +12,6 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_span_fwd.h \
  /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h \
  /Users/finndooley/butano/butano/include/bn_common.h \
@@ -53,7 +52,6 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_span_fwd.h:
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h:
 /Users/finndooley/butano/butano/include/bn_common.h:

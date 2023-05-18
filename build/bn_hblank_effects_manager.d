@@ -15,7 +15,6 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -36,6 +35,7 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
  /Users/finndooley/butano/butano/include/bn_memory.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
  /Users/finndooley/butano/butano/include/bn_config_log.h \
@@ -269,7 +269,6 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
@@ -290,6 +289,7 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
 /Users/finndooley/butano/butano/include/bn_memory.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
 /Users/finndooley/butano/butano/include/bn_config_log.h:
