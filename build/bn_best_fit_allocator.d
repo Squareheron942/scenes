@@ -22,6 +22,7 @@ bn_best_fit_allocator.o: \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
+ /Users/finndooley/butano/butano/include/bn_memory_alias.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_log.h
@@ -47,6 +48,7 @@ bn_best_fit_allocator.o: \
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
+/Users/finndooley/butano/butano/include/bn_memory_alias.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_log.h:

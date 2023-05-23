@@ -18,8 +18,7 @@ bn_hw_sram.bn_ewram.o: \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_surface.h \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h
+ /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_sram.h:
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_tonc.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
@@ -39,4 +38,3 @@ bn_hw_sram.bn_ewram.o: \
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h:
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h:

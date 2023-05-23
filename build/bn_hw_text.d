@@ -15,6 +15,7 @@ bn_hw_text.o: /Users/finndooley/butano/butano/hw/src/bn_hw_text.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -42,6 +43,7 @@ bn_hw_text.o: /Users/finndooley/butano/butano/hw/src/bn_hw_text.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:

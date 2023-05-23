@@ -44,7 +44,7 @@ public:
 static inline uint8_t scn_type = 0;
 static inline uint8_t scn_tr_out = 0;
 static inline bn::fixed scn_t_out = 0;
-static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
+static inline bn::string_view scn_to_load = bn::string_view("SAVE_SEL");
 static inline bool load_scn = true;
 static inline uint16_t num_scn = 2;
 static inline pk::sav_data sav;

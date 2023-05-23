@@ -13,6 +13,7 @@ bn_math.o: /Users/finndooley/butano/butano/src/bn_math.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -23,7 +24,6 @@ bn_math.o: /Users/finndooley/butano/butano/src/bn_math.cpp \
  /Users/finndooley/butano/butano/include/bn_rule_of_three_approximation.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_math.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/gba-modern/include/gba-modern.h
 /Users/finndooley/butano/butano/include/bn_math.h:
 /Users/finndooley/butano/butano/include/bn_array.h:
@@ -39,6 +39,7 @@ bn_math.o: /Users/finndooley/butano/butano/src/bn_math.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
@@ -49,5 +50,4 @@ bn_math.o: /Users/finndooley/butano/butano/src/bn_math.cpp \
 /Users/finndooley/butano/butano/include/bn_rule_of_three_approximation.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_math.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/gba-modern/include/gba-modern.h:

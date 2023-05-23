@@ -12,7 +12,8 @@ bn_hw_common.bn_noflto.o: \
  /Users/finndooley/butano/butano/include/bn_string_fwd.h \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
- /Users/finndooley/butano/butano/include/bn_functional.h
+ /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_common.h:
 /Users/finndooley/butano/butano/include/bn_assert.h:
 /Users/finndooley/butano/butano/include/bn_type_traits.h:
@@ -26,3 +27,4 @@ bn_hw_common.bn_noflto.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:

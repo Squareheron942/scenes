@@ -40,8 +40,8 @@ ROMCODE     :=  SBTP
 USERFLAGS   :=  -Iinclude -O2 -Wstack-usage=16384 -Wno-reorder -ffast-math -ffunction-sections -fdata-sections -Wuseless-cast -Wnon-virtual-dtor -Woverloaded-virtual -fno-rtti -fno-exceptions
 USERASFLAGS :=  
 USERLDFLAGS :=  
-USERLIBDIRS :=  
-USERLIBS    :=  
+USERLIBDIRS :=  /Users/finndooley/agbabi
+USERLIBS    :=  /Users/finndooley/agbabi/libagbabi.a
 USERBUILD   :=  
 EXTTOOL     :=  
 

@@ -35,7 +35,7 @@ void pk::SceneManager::load(int index) {
             break;
         default:
             // pk::SceneManager::cur_scn.reset(new pk::scenes::NotFoundScene());
-            BN_ERROR(bn::to_string<64>("Scene \"") + pk::common::scn_to_load + bn::to_string<64>("\" not found."));
+            BN_ERROR(bn::to_string<128>("Scene \"") + pk::common::scn_to_load + bn::to_string<128>("\" not found."));
             break;
     }
     bn::core::update();
@@ -67,16 +67,19 @@ void pk::SceneManager::load(bn::string_view name) {
  */
 void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed time) {
     switch (transition) {
+        case 0:
+        default:
+            break;
         case 1:
             bn::bg_palettes::set_fade_color(bn::color(0,0,0));
             bn::sprite_palettes::set_fade_color(bn::color(0, 0, 0));
             for (int i = 0; i <= (60 * time).integer(); i++) {
                 bn::bg_palettes::set_fade_intensity(bn::fixed(i) / (time * 60));
+                bn::sprite_palettes::set_fade_intensity(bn::fixed(i) / (time * 60));
                 bn::core::update();
             }
             break;
-        default:
-            break;
+        
     }
     pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
 }
@@ -95,12 +98,11 @@ void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed 
  * @param name The name of the scene to load
  */
 void pk::SceneManager::set_load(bn::string_view name) {
-    pk::common::scn_to_load = name;
+    pk::common::scn_to_load.swap(name);
+    // pk::common::scn_to_load = name;
     pk::common::load_scn = true;
     pk::common::scn_t_out = 0;
     pk::common::scn_tr_out = 0;
-    pk::common::scn_t_in = 0;
-    pk::common::scn_tr_in = 0;
 }
 
 /**
@@ -111,8 +113,8 @@ void pk::SceneManager::set_load(bn::string_view name) {
  * @param time The length of the transition (in seconds)
  */
 void pk::SceneManager::set_load(bn::string_view name, uint8_t transition, bn::fixed time) {
-    bn::log(to_string<64>(name));
-    pk::common::scn_to_load = name;
+    pk::common::scn_to_load.swap(name);
+    // pk::common::scn_to_load = name;
     pk::common::load_scn = true;
     pk::common::scn_t_out = time;
     pk::common::scn_tr_out = transition;

@@ -18,7 +18,6 @@ bn_hw_sram.o: /Users/finndooley/butano/butano/hw/src/bn_hw_sram.cpp \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/include/bn_config_sram.h \
  /Users/finndooley/butano/butano/include/bn_sram_wait_state.h \
  /Users/finndooley/butano/butano/include/bn_common.h \
@@ -42,7 +41,6 @@ bn_hw_sram.o: /Users/finndooley/butano/butano/hw/src/bn_hw_sram.cpp \
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h:
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/include/bn_config_sram.h:
 /Users/finndooley/butano/butano/include/bn_sram_wait_state.h:
 /Users/finndooley/butano/butano/include/bn_common.h:

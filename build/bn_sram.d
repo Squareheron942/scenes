@@ -12,6 +12,7 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_span_fwd.h \
  /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h \
  /Users/finndooley/butano/butano/include/bn_common.h \
@@ -37,8 +38,7 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_surface.h \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h
+ /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h
 /Users/finndooley/butano/butano/include/bn_sram.h:
 /Users/finndooley/butano/butano/include/bn_assert.h:
 /Users/finndooley/butano/butano/include/bn_type_traits.h:
@@ -52,6 +52,7 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_span_fwd.h:
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_sram_constants.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
@@ -78,4 +79,3 @@ bn_sram.o: /Users/finndooley/butano/butano/src/bn_sram.cpp \
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_video.h:
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h:

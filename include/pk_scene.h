@@ -14,7 +14,7 @@ namespace pk {
 class Scene {
     public:
     bn::string_view name;
-    bn::regular_bg_map_cell cells[600];
+    bn::regular_bg_map_cell *cells[1024];
     bn::regular_bg_map_item ui_bg; // covers the entire background
     const bn::regular_bg_item background;
     int type;
@@ -22,7 +22,7 @@ class Scene {
     virtual void main() {};
     virtual ~Scene() {};
 
-    Scene(bn::string_view _name, int _type, const bn::regular_bg_item& _background) : name(_name), type(_type), background(_background), ui_bg(cells[0], bn::size(32, 32)) {};
+    Scene(bn::string_view _name, int _type, const bn::regular_bg_item& _background) : name(_name), type(_type), background(_background), ui_bg(*cells[0], bn::size(32, 32)) {};
 
 
 };

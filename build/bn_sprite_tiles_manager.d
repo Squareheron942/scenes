@@ -15,23 +15,24 @@ bn_sprite_tiles_manager.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
  /Users/finndooley/butano/butano/include/bn_array_fwd.h \
  /Users/finndooley/butano/butano/include/bn_span_fwd.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
- /Users/finndooley/butano/butano/include/bn_memory.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
- /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
- /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
+ /Users/finndooley/butano/butano/include/bn_memory_alias.h \
  /Users/finndooley/butano/butano/include/bn_config_log.h \
  /Users/finndooley/butano/butano/include/bn_log_backend.h \
- /Users/finndooley/butano/butano/include/bn_config_log.h \
  /Users/finndooley/butano/butano/include/bn_vector.h \
  /Users/finndooley/butano/butano/include/bn_vector_fwd.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/butano/butano/include/bn_unordered_map.h \
+ /Users/finndooley/butano/butano/include/bn_memory.h \
+ /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
+ /Users/finndooley/butano/butano/include/bn_config_log.h \
  /Users/finndooley/butano/butano/include/bn_power_of_two.h \
  /Users/finndooley/butano/butano/include/bn_unordered_map_fwd.h \
  /Users/finndooley/butano/butano/include/bn_config_sprite_tiles.h \
@@ -59,7 +60,6 @@ bn_sprite_tiles_manager.o: \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_decompress.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/cult-of-gba-bios/include/cult-of-gba-bios.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_sprite_tiles_constants.h \
@@ -91,23 +91,24 @@ bn_sprite_tiles_manager.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
 /Users/finndooley/butano/butano/include/bn_array_fwd.h:
 /Users/finndooley/butano/butano/include/bn_span_fwd.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
-/Users/finndooley/butano/butano/include/bn_memory.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
-/Users/finndooley/butano/butano/include/bn_unique_ptr.h:
-/Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
+/Users/finndooley/butano/butano/include/bn_memory_alias.h:
 /Users/finndooley/butano/butano/include/bn_config_log.h:
 /Users/finndooley/butano/butano/include/bn_log_backend.h:
-/Users/finndooley/butano/butano/include/bn_config_log.h:
 /Users/finndooley/butano/butano/include/bn_vector.h:
 /Users/finndooley/butano/butano/include/bn_vector_fwd.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/butano/butano/include/bn_unordered_map.h:
+/Users/finndooley/butano/butano/include/bn_memory.h:
+/Users/finndooley/butano/butano/include/bn_unique_ptr.h:
+/Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
+/Users/finndooley/butano/butano/include/bn_config_log.h:
 /Users/finndooley/butano/butano/include/bn_power_of_two.h:
 /Users/finndooley/butano/butano/include/bn_unordered_map_fwd.h:
 /Users/finndooley/butano/butano/include/bn_config_sprite_tiles.h:
@@ -135,7 +136,6 @@ bn_sprite_tiles_manager.o: \
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_decompress.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/cult-of-gba-bios/include/cult-of-gba-bios.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_sprite_tiles_constants.h:

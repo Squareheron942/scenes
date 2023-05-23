@@ -14,6 +14,7 @@ bn_hw_sprite_tiles.bn_iwram.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_compression_type.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_dma.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_tonc.h \
@@ -35,7 +36,6 @@ bn_hw_sprite_tiles.bn_iwram.o: \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_decompress.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/cult-of-gba-bios/include/cult-of-gba-bios.h
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_sprite_tiles.h:
@@ -52,6 +52,7 @@ bn_hw_sprite_tiles.bn_iwram.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_compression_type.h:
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_dma.h:
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_tonc.h:
@@ -73,6 +74,5 @@ bn_hw_sprite_tiles.bn_iwram.o: \
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_decompress.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/cult-of-gba-bios/include/cult-of-gba-bios.h:

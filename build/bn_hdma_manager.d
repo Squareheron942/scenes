@@ -24,7 +24,6 @@ bn_hdma_manager.o: \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/src/bn_hdma.cpp.h \
  /Users/finndooley/butano/butano/include/bn_hdma.h \
  /Users/finndooley/butano/butano/include/bn_common.h \
@@ -37,7 +36,8 @@ bn_hdma_manager.o: \
  /Users/finndooley/butano/butano/include/bn_string_fwd.h \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
- /Users/finndooley/butano/butano/include/bn_functional.h
+ /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h
 /Users/finndooley/butano/butano/src/bn_hdma_manager.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
 /Users/finndooley/butano/butano/include/../hw/include/bn_hw_common.h:
@@ -62,7 +62,6 @@ bn_hdma_manager.o: \
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/src/bn_hdma.cpp.h:
 /Users/finndooley/butano/butano/include/bn_hdma.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
@@ -76,3 +75,4 @@ bn_hdma_manager.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:

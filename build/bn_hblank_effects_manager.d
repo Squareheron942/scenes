@@ -15,6 +15,7 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -24,7 +25,6 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/include/bn_config_hbes.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_irq.h \
  /Users/finndooley/butano/butano/src/bn_bg_palette_color_hbe_handler.h \
- /Users/finndooley/butano/butano/include/bn_any_fwd.h \
  /Users/finndooley/butano/butano/src/bn_palettes_bank.h \
  /Users/finndooley/butano/butano/include/bn_span.h \
  /Users/finndooley/butano/butano/include/bn_array.h \
@@ -34,14 +34,14 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/include/bn_color.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
+ /Users/finndooley/butano/butano/include/bn_memory_alias.h \
+ /Users/finndooley/butano/butano/include/bn_config_log.h \
+ /Users/finndooley/butano/butano/include/bn_log_backend.h \
+ /Users/finndooley/butano/butano/include/bn_unordered_map.h \
  /Users/finndooley/butano/butano/include/bn_memory.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
  /Users/finndooley/butano/butano/include/bn_config_log.h \
- /Users/finndooley/butano/butano/include/bn_log_backend.h \
- /Users/finndooley/butano/butano/include/bn_config_log.h \
- /Users/finndooley/butano/butano/include/bn_unordered_map.h \
  /Users/finndooley/butano/butano/include/bn_power_of_two.h \
  /Users/finndooley/butano/butano/include/bn_unordered_map_fwd.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_palettes.h \
@@ -64,7 +64,6 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h \
  /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/src/bn_palettes_manager.h \
  /Users/finndooley/butano/butano/src/bn_palette_target_id.h \
  /Users/finndooley/butano/butano/src/bn_bg_palettes_transparent_color_hbe_handler.h \
@@ -110,10 +109,6 @@ bn_hblank_effects_manager.o: \
  /Users/finndooley/butano/butano/src/bn_mosaic_attributes_hbe_handler.h \
  /Users/finndooley/butano/butano/include/bn_mosaic_attributes.h \
  /Users/finndooley/butano/butano/src/bn_rect_window_horizontal_boundaries_hbe_handler.h \
- /Users/finndooley/butano/butano/include/bn_any.h \
- /Users/finndooley/butano/butano/include/bn_limits.h \
- /Users/finndooley/butano/butano/include/bn_type_id.h \
- /Users/finndooley/butano/butano/include/bn_any_fwd.h \
  /Users/finndooley/butano/butano/src/bn_rect_window_vertical_boundaries_hbe_handler.h \
  /Users/finndooley/butano/butano/src/bn_regular_bg_attributes_hbe_handler.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h \
@@ -269,6 +264,7 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
@@ -278,7 +274,6 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/include/bn_config_hbes.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_irq.h:
 /Users/finndooley/butano/butano/src/bn_bg_palette_color_hbe_handler.h:
-/Users/finndooley/butano/butano/include/bn_any_fwd.h:
 /Users/finndooley/butano/butano/src/bn_palettes_bank.h:
 /Users/finndooley/butano/butano/include/bn_span.h:
 /Users/finndooley/butano/butano/include/bn_array.h:
@@ -288,14 +283,14 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/include/bn_color.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
+/Users/finndooley/butano/butano/include/bn_memory_alias.h:
+/Users/finndooley/butano/butano/include/bn_config_log.h:
+/Users/finndooley/butano/butano/include/bn_log_backend.h:
+/Users/finndooley/butano/butano/include/bn_unordered_map.h:
 /Users/finndooley/butano/butano/include/bn_memory.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
 /Users/finndooley/butano/butano/include/bn_config_log.h:
-/Users/finndooley/butano/butano/include/bn_log_backend.h:
-/Users/finndooley/butano/butano/include/bn_config_log.h:
-/Users/finndooley/butano/butano/include/bn_unordered_map.h:
 /Users/finndooley/butano/butano/include/bn_power_of_two.h:
 /Users/finndooley/butano/butano/include/bn_unordered_map_fwd.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_palettes.h:
@@ -318,7 +313,6 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_memory.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/src/../hw/include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/src/bn_palettes_manager.h:
 /Users/finndooley/butano/butano/src/bn_palette_target_id.h:
 /Users/finndooley/butano/butano/src/bn_bg_palettes_transparent_color_hbe_handler.h:
@@ -364,10 +358,6 @@ bn_hblank_effects_manager.o: \
 /Users/finndooley/butano/butano/src/bn_mosaic_attributes_hbe_handler.h:
 /Users/finndooley/butano/butano/include/bn_mosaic_attributes.h:
 /Users/finndooley/butano/butano/src/bn_rect_window_horizontal_boundaries_hbe_handler.h:
-/Users/finndooley/butano/butano/include/bn_any.h:
-/Users/finndooley/butano/butano/include/bn_limits.h:
-/Users/finndooley/butano/butano/include/bn_type_id.h:
-/Users/finndooley/butano/butano/include/bn_any_fwd.h:
 /Users/finndooley/butano/butano/src/bn_rect_window_vertical_boundaries_hbe_handler.h:
 /Users/finndooley/butano/butano/src/bn_regular_bg_attributes_hbe_handler.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h:

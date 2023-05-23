@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "My build task",
+            "type": "process",
+            // Assign output file name with VSCode inner variables like ${fileBasename}
+            "command": "make",
+            "options": {
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

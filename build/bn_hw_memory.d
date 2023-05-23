@@ -19,15 +19,15 @@ bn_hw_memory.o: /Users/finndooley/butano/butano/hw/src/bn_hw_memory.cpp \
  /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h \
  /Users/finndooley/butano/butano/include/bn_random.h \
  /Users/finndooley/butano/butano/include/bn_fixed.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_common.h \
  /Users/finndooley/butano/butano/include/bn_fixed_fwd.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
- /Users/finndooley/butano/butano/include/bn_assert.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_type_traits.h \
+ /Users/finndooley/butano/butano/include/bn_assert.h \
  /Users/finndooley/butano/butano/include/bn_config_assert.h \
  /Users/finndooley/butano/butano/include/bn_config_doxygen.h \
  /Users/finndooley/butano/butano/include/bn_sstream.h \
@@ -57,15 +57,15 @@ bn_hw_memory.o: /Users/finndooley/butano/butano/hw/src/bn_hw_memory.cpp \
 /Users/finndooley/butano/butano/hw/3rd_party/libtonc/include/tonc_nocash.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h:
 /Users/finndooley/butano/butano/include/bn_random.h:
 /Users/finndooley/butano/butano/include/bn_fixed.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
 /Users/finndooley/butano/butano/include/bn_fixed_fwd.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
-/Users/finndooley/butano/butano/include/bn_assert.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_type_traits.h:
+/Users/finndooley/butano/butano/include/bn_assert.h:
 /Users/finndooley/butano/butano/include/bn_config_assert.h:
 /Users/finndooley/butano/butano/include/bn_config_doxygen.h:
 /Users/finndooley/butano/butano/include/bn_sstream.h:

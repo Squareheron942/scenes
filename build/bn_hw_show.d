@@ -15,6 +15,7 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
  /Users/finndooley/butano/butano/include/bn_utility.h \
  /Users/finndooley/butano/butano/include/bn_compare.h \
  /Users/finndooley/butano/butano/include/bn_iterator.h \
@@ -48,12 +49,7 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
  /Users/finndooley/butano/butano/include/bn_camera_ptr.h \
  /Users/finndooley/butano/butano/include/bn_fixed.h \
  /Users/finndooley/butano/butano/include/bn_optional.h \
- /Users/finndooley/butano/butano/include/bn_memory.h \
- /Users/finndooley/butano/butano/include/bn_alignment.h \
- /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
- /Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h \
- /Users/finndooley/butano/butano/include/bn_config_log.h \
- /Users/finndooley/butano/butano/include/bn_log_backend.h \
+ /Users/finndooley/butano/butano/include/bn_memory_alias.h \
  /Users/finndooley/butano/butano/include/bn_fixed_point.h \
  /Users/finndooley/butano/butano/include/bn_point.h \
  /Users/finndooley/butano/butano/include/bn_affine_bg_item.h \
@@ -86,8 +82,7 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_tonc.h \
  /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h \
  /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h
+ /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_show.h:
 /Users/finndooley/butano/butano/include/bn_config_assert.h:
 /Users/finndooley/butano/butano/include/bn_common.h:
@@ -104,6 +99,7 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
 /Users/finndooley/butano/butano/include/bn_utility.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
 /Users/finndooley/butano/butano/include/bn_iterator.h:
@@ -137,12 +133,7 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
 /Users/finndooley/butano/butano/include/bn_camera_ptr.h:
 /Users/finndooley/butano/butano/include/bn_fixed.h:
 /Users/finndooley/butano/butano/include/bn_optional.h:
-/Users/finndooley/butano/butano/include/bn_memory.h:
-/Users/finndooley/butano/butano/include/bn_alignment.h:
-/Users/finndooley/butano/butano/include/bn_unique_ptr.h:
-/Users/finndooley/butano/butano/include/bn_unique_ptr_fwd.h:
-/Users/finndooley/butano/butano/include/bn_config_log.h:
-/Users/finndooley/butano/butano/include/bn_log_backend.h:
+/Users/finndooley/butano/butano/include/bn_memory_alias.h:
 /Users/finndooley/butano/butano/include/bn_fixed_point.h:
 /Users/finndooley/butano/butano/include/bn_point.h:
 /Users/finndooley/butano/butano/include/bn_affine_bg_item.h:
@@ -176,4 +167,3 @@ bn_hw_show.o: /Users/finndooley/butano/butano/hw/src/bn_hw_show.cpp \
 /Users/finndooley/butano/butano/hw/src/../include/bn_hw_memory.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/aeabi.h:
 /Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/hw/src/../include/../3rd_party/agbabi/include/sys/ucontext.h:

@@ -18,11 +18,11 @@ namespace pk {
 // Groups together all of the scene managing systems
 class SceneManager {
     public:
-        // const static inline struct {
-        //     const static int NONE = 0;
-        //     const static int TRANSITION_FADE = 1;
-        //     const static int TRANSITION_HBLANK = 2;
-        // } transitions;
+        struct transitions {
+            const static uint8_t NONE = 0;
+            const static uint8_t TRANSITION_FADE = 1;
+            const static uint8_t TRANSITION_HBLANK = 2;
+        };
         static inline bn::unique_ptr<pk::Scene> cur_scn;
         static inline bn::optional<bn::regular_bg_ptr> cur_bg;
         static inline bn::optional<bn::regular_bg_map_item> ui_layer;

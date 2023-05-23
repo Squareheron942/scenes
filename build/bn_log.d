@@ -11,6 +11,8 @@ bn_log.o: /Users/finndooley/butano/butano/src/bn_log.cpp \
  /Users/finndooley/butano/butano/include/bn_istring_base.h \
  /Users/finndooley/butano/butano/include/bn_algorithm.h \
  /Users/finndooley/butano/butano/include/bn_functional.h \
+ /Users/finndooley/butano/butano/include/bn_alignment.h \
+ /Users/finndooley/butano/butano/include/bn_type_traits.h \
  /Users/finndooley/butano/butano/src/../hw/include/bn_hw_log.h \
  /Users/finndooley/butano/butano/include/bn_config_log.h
 /Users/finndooley/butano/butano/include/bn_log.h:
@@ -25,5 +27,7 @@ bn_log.o: /Users/finndooley/butano/butano/src/bn_log.cpp \
 /Users/finndooley/butano/butano/include/bn_istring_base.h:
 /Users/finndooley/butano/butano/include/bn_algorithm.h:
 /Users/finndooley/butano/butano/include/bn_functional.h:
+/Users/finndooley/butano/butano/include/bn_alignment.h:
+/Users/finndooley/butano/butano/include/bn_type_traits.h:
 /Users/finndooley/butano/butano/src/../hw/include/bn_hw_log.h:
 /Users/finndooley/butano/butano/include/bn_config_log.h:
