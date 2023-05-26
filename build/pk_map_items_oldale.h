@@ -14,7 +14,6 @@ namespace pk::maps::NEWPINE_TOWN
     const bn::string_view id("MAP_NEWPINE_TOWN");
     const bn::string_view name("Newpine Town");
     const bn::music_item music = bn::music_items::cyberrid;
-    // const bn::regular_bg_item bg0;
     const bn::size map_size(40, 40);
     const bool allow_cycling = true;
     const bool allow_escaping = false;
