@@ -63,8 +63,28 @@ pk_title_scene.o: \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
  /Users/finndooley/butano/butano/include/bn_random.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
+ /Users/finndooley/agbabi/include/agbabi.h \
  /Users/finndooley/butano/butano/include/bn_bg_palettes.h \
- /Users/finndooley/butano/butano/include/bn_sprite_palettes.h
+ /Users/finndooley/butano/butano/include/bn_sprite_palettes.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal1.h \
+ /Users/finndooley/butano/butano/include/bn_bg_palette_item.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/pk_map_items_newpine_town.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_music_items.h \
+ /Users/finndooley/butano/butano/include/bn_music_item.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_maps.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_weather.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/pk_map_weather_tables.h \
+ /Users/finndooley/butano/butano/include/bn_color.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_seasons.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_general.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h \
+ /Users/finndooley/butano/butano/include/bn_bpp_mode.h \
+ /Users/finndooley/butano/butano/include/bn_span.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_bg_palette_ptr.h \
+ /Users/finndooley/butano/butano/include/bn_regular_bg_map_ptr.h
 /Users/finndooley/butano/butano/include/bn_regular_bg_item.h:
 /Users/finndooley/butano/butano/include/bn_fixed.h:
 /Users/finndooley/butano/butano/include/bn_compare.h:
@@ -128,5 +148,25 @@ pk_title_scene.o: \
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
 /Users/finndooley/butano/butano/include/bn_random.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
+/Users/finndooley/agbabi/include/agbabi.h:
 /Users/finndooley/butano/butano/include/bn_bg_palettes.h:
 /Users/finndooley/butano/butano/include/bn_sprite_palettes.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_txtpal1.h:
+/Users/finndooley/butano/butano/include/bn_bg_palette_item.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/pk_map_items_newpine_town.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_music_items.h:
+/Users/finndooley/butano/butano/include/bn_music_item.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_maps.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_weather.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/pk_map_weather_tables.h:
+/Users/finndooley/butano/butano/include/bn_color.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_seasons.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_general.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h:
+/Users/finndooley/butano/butano/include/bn_bpp_mode.h:
+/Users/finndooley/butano/butano/include/bn_span.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h:
+/Users/finndooley/butano/butano/include/bn_bg_palette_ptr.h:
+/Users/finndooley/butano/butano/include/bn_regular_bg_map_ptr.h:

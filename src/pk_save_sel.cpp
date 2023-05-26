@@ -17,6 +17,7 @@
 pk::scenes::SaveSel::SaveSel() : pk::scene_types::MenuScene(bn::string_view("SAVE_SEL"), bn::regular_bg_items::background) {};
 
 void pk::scenes::SaveSel::main() {
+    bn::regular_bg_ptr bg0 = bn::regular_bg_items::background.create_bg(8, 0);
 
     bn::sram::read(pk::common::sav);
     if (!pk::common::sav.flags.has_sav) pk::common::sav = pk::common::temp_sav;

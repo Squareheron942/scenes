@@ -5,6 +5,7 @@
 #include "bn_point.h"
 #include "bn_random.h"
 #include "bn_fixed.h"
+#include <agbabi.h>
 
 namespace pk
 {
@@ -33,6 +34,7 @@ struct sav_data {
         bool has_sav;
         bool isOnTitle;
         bool main_sav;
+        bool has_clk;
     } flags;
 };
 
@@ -44,7 +46,7 @@ public:
 static inline uint8_t scn_type = 0;
 static inline uint8_t scn_tr_out = 0;
 static inline bn::fixed scn_t_out = 0;
-static inline bn::string_view scn_to_load = bn::string_view("SAVE_SEL");
+static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
 static inline bool load_scn = true;
 static inline uint16_t num_scn = 2;
 static inline pk::sav_data sav;
@@ -66,7 +68,8 @@ static inline pk::sav_data temp_sav = { // Basic save template, has default sett
     .flags = {
         .has_sav = false,
         .isOnTitle = true,
-        .main_sav = false
+        .main_sav = false,
+        .has_clk = true
     }
 };
 

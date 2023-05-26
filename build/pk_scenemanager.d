@@ -59,6 +59,7 @@ pk_scenemanager.o: \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
  /Users/finndooley/butano/butano/include/bn_random.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
+ /Users/finndooley/agbabi/include/agbabi.h \
  /Users/finndooley/butano/butano/include/bn_string.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/butano/butano/include/bn_unordered_map.h \
@@ -134,6 +135,7 @@ pk_scenemanager.o: \
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
 /Users/finndooley/butano/butano/include/bn_random.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
+/Users/finndooley/agbabi/include/agbabi.h:
 /Users/finndooley/butano/butano/include/bn_string.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/butano/butano/include/bn_unordered_map.h:

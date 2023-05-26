@@ -50,6 +50,7 @@ pk_not_found_scene.o: \
  /Users/finndooley/butano/butano/include/bn_random.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/butano/butano/include/bn_fixed.h \
+ /Users/finndooley/agbabi/include/agbabi.h \
  /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h \
  /Users/finndooley/butano/butano/include/bn_core.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
@@ -125,6 +126,7 @@ pk_not_found_scene.o: \
 /Users/finndooley/butano/butano/include/bn_random.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/butano/butano/include/bn_fixed.h:
+/Users/finndooley/agbabi/include/agbabi.h:
 /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h:
 /Users/finndooley/butano/butano/include/bn_core.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:

@@ -11,12 +11,32 @@
 #include "pk_common.h"
 #include "bn_bg_palettes.h"
 #include "bn_sprite_palettes.h"
+#include "bn_regular_bg_map_item.h"
+#include "bn_bg_palette_items_txtpal1.h"
+
+#include "pk_map_items_newpine_town.h"
+#include "bn_regular_bg_tiles_items_general.h"
+#include "bn_regular_bg_tiles_items_txt1.h"
+#include "bn_bpp_mode.h"
+#include "bn_span.h"
+#include "bn_regular_bg_tiles_item.h"
+#include "bn_regular_bg_tiles_ptr.h"
+#include "bn_bg_palette_ptr.h"
+#include "bn_regular_bg_map_cell.h"
+#include "bn_regular_bg_map_ptr.h"
 
 pk::scenes::TitleScene::TitleScene() : pk::scene_types::MenuScene(bn::string_view("TITLE_SCREEN"), bn::regular_bg_items::titlebg) {};
 
 void pk::scenes::TitleScene::main() {
-    pk::SceneManager::cur_bg.value().set_position(8, 48);
+    // map.create_map(bn::regular_bg_tiles_ptr::create(bn::regular_bg_tiles_item(bn::span(pk::maps::NEWPINE_TOWN::layout), bn::bpp_mode::BPP_8)), bn::bg_palette_items::txtpal1.create_palette());
+    // pk::SceneManager::cur_bg.value().set_position(8, 48);
+    // bn::regular_bg_ptr bg = bn::regular_bg_items::titlebg.create_bg(8, 48);
+    const bn::regular_bg_map_item map((bn::regular_bg_map_cell)*pk::maps::NEWPINE_TOWN::layout, pk::maps::NEWPINE_TOWN::map_size);
+    bn::regular_bg_tiles_ptr tiles = bn::regular_bg_tiles_ptr::create(bn::regular_bg_tiles_items::txt1);
+    bn::bg_palette_ptr palette = bn::bg_palette_items::txtpal1.create_palette();
+    bn::regular_bg_ptr bg = bn::regular_bg_ptr::create(8, 48, map.create_map(tiles, palette));
     bn::log(bn::to_string<16>("Title Screen"));
+    pk::maps::NEWPINE_TOWN::music.play(bn::fixed(0.5));
     for (int i = 0; i < (60 * bn::fixed(0.3)); i++) {
         bn::bg_palettes::set_fade_intensity(1 - bn::fixed(i) / (bn::fixed(0.3) * 60));
         bn::sprite_palettes::set_fade_intensity(1 - bn::fixed(i) / (bn::fixed(0.3) * 60));

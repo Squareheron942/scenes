@@ -1,0 +1,28 @@
+{
+    "dimensions": {
+        "height": 32,
+        "width": 32
+    },
+    "allow_cycling": true,
+    "allow_escaping": false,
+    "allow_running": true,
+    "do_weather": true,
+    "default_weather": "WEATHER_SUNNY",
+    "weather_odds": {
+        "WEATHER_NONE": 0,
+        "WEATHER_SUNNY": 100,
+        "WEATHER_LIGHT_RAIN": 0,
+        "WEATHER_RAIN": 0,
+        "WEATHER_HEAVY_RAIN": 0,
+        "WEATHER_STORM": 0
+    },
+    "do_seasons": true,
+    "default_season": "SEASON_SUMMER",
+    "require_flash": false,
+    "map_type": "MAP_TYPE_TOWN",
+    "music": "MUS_NEWPINE_TOWN",
+    "id": "MAP_NEWPINE_TOWN", 
+    "name": "Newpine Town",
+    "show_map_name": true,
+    "battle_scenes": "MAP_BATTLE_SCENE_NORMAL"
+}

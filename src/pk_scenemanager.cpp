@@ -40,9 +40,8 @@ void pk::SceneManager::load(int index) {
     }
     bn::core::update();
 
-    ui_layer = cur_scn->ui_bg;
-    if (cur_scn->has_bg) cur_bg = cur_scn->background.create_bg(0, 0);
-    // cur_scn->main();
+    // ui_layer = cur_scn->ui_bg;
+    // if (cur_scn->has_bg) cur_bg = cur_scn->background.create_bg(0, 0);
 }
 
 /**
@@ -58,19 +57,52 @@ void pk::SceneManager::load(bn::string_view name) {
 
 
 
+// /**
+//  * @brief Loads given scene using a transition out
+//  * 
+//  * @param name Name of the scene to load
+//  * @param transition Transition to use
+//  * @param time Length of transition
+//  */
+// void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed time) {
+//     bn::log(bn::to_string<18>(transition));
+    
+//     // for (int i = 0; i <= (60 * time).integer(); i++) bn::core::update();
+//     pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
+// }
+
+
+
+
+
+
+
+
+
 /**
- * @brief Loads given scene using a transition out
+ * @brief Tells the scene manager to load a new scene
  * 
- * @param name Name of the scene to load
- * @param transition Transition to use
- * @param time Length of transition
+ * @param name The name of the scene to load
  */
-void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed time) {
+void pk::SceneManager::set_load(bn::string_view name) {
+    pk::common::scn_to_load.swap(name);
+    pk::common::load_scn = true;
+}
+
+/**
+ * @brief Tells the scene manager to load a new scene
+ * 
+ * @param name The name of the scene to load
+ * @param transition The transition to use
+ * @param time The length of the transition (in seconds)
+ */
+void pk::SceneManager::set_load(bn::string_view name, uint8_t transition, bn::fixed time) {
+    pk::common::scn_to_load.swap(name);
+    pk::common::load_scn = true;
     switch (transition) {
-        case 0:
-        default:
+        case pk::SceneManager::transitions::NONE:
             break;
-        case 1:
+        case pk::SceneManager::transitions::TRANSITION_FADE:
             bn::bg_palettes::set_fade_color(bn::color(0,0,0));
             bn::sprite_palettes::set_fade_color(bn::color(0, 0, 0));
             for (int i = 0; i <= (60 * time).integer(); i++) {
@@ -79,43 +111,10 @@ void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed 
                 bn::core::update();
             }
             break;
-        
+        case pk::SceneManager::transitions::TRANSITION_HBLANK:
+            break;
+        default:
+            break;
     }
-    pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
-}
-
-
-
-
-
-
-
-
-
-/**
- * @brief Tells the scene manager to load a new scene with the given parameters
- * 
- * @param name The name of the scene to load
- */
-void pk::SceneManager::set_load(bn::string_view name) {
-    pk::common::scn_to_load.swap(name);
-    // pk::common::scn_to_load = name;
-    pk::common::load_scn = true;
-    pk::common::scn_t_out = 0;
-    pk::common::scn_tr_out = 0;
-}
-
-/**
- * @brief Tells the scene manager to load a new scene with the given parameters
- * 
- * @param name The name of the scene to load
- * @param transition The transition to use
- * @param time The length of the transition (in seconds)
- */
-void pk::SceneManager::set_load(bn::string_view name, uint8_t transition, bn::fixed time) {
-    pk::common::scn_to_load.swap(name);
-    // pk::common::scn_to_load = name;
-    pk::common::load_scn = true;
-    pk::common::scn_t_out = time;
-    pk::common::scn_tr_out = transition;
+    for (int i = 0; i <= (60 * time).integer(); i++) bn::core::update();
 }

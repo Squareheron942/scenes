@@ -16,7 +16,6 @@ int main()
     while(true)
     {
         if (pk::common::load_scn) {
-            // pk::SceneManager::load(pk::common::scn_to_load, pk::common::scn_tr_out, pk::common::scn_t_out);
             pk::SceneManager::load(pk::common::scn_to_load);
             pk::SceneManager::cur_scn->main();
         }
