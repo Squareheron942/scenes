@@ -6,6 +6,7 @@
 namespace bn::music_items
 {
     constexpr inline music_item cyberrid(0);
+    constexpr inline music_item mus_newpine_town(1);
 }
 
 #endif

@@ -12,9 +12,9 @@ namespace pk::seasons
 
     // uint8_t* CURRENT_SEASON = new uint8_t(0);
 
-    void update() {
+    // void update() {
 
-    }
+    // }
 }
 
 

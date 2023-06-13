@@ -1,0 +1,28 @@
+{
+    "dimensions": {
+        "height": 32,
+        "width": 32
+    },
+    "allow_cycling": false,
+    "allow_escaping": false,
+    "allow_running": true,
+    "do_weather": false,
+    "default_weather": "WEATHER_NONE",
+    "weather_odds": {
+        "WEATHER_NONE": 0,
+        "WEATHER_SUNNY": 0,
+        "WEATHER_LIGHT_RAIN": 0,
+        "WEATHER_RAIN": 0,
+        "WEATHER_HEAVY_RAIN": 0,
+        "WEATHER_STORM": 0
+    },
+    "do_seasons": false,
+    "default_season": "SEASON_SUMMER",
+    "require_flash": false,
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RIVAL_HOUSE",
+    "id": "MAP_RIVAL_HOUSE", 
+    "name": "Rival's House",
+    "show_map_name": false,
+    "battle_scenes": "MAP_BATTLE_SCENE_NORMAL"
+}

@@ -38,17 +38,17 @@ namespace pk::weather {
         WEATHER_STORM
     };
 
-    void update(bn::random &rand) {
-        // if (pk::common::last_weather_update)
-        for (uint16_t i = 0; i < pk::weather::map_tables_length; ++i) {
-            uint8_t num = rand.get_int(100);
-            for (uint8_t j = 0 ; j < 6; j++) {
-                if (num < pk::weather::map_tables[i][j]) {
+    // void update(bn::random &rand) {
+    //     // if (pk::common::last_weather_update)
+    //     for (uint16_t i = 0; i < pk::weather::map_tables_length; ++i) {
+    //         uint8_t num = rand.get_int(100);
+    //         for (uint8_t j = 0 ; j < 6; j++) {
+    //             if (num < pk::weather::map_tables[i][j]) {
                     
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 #endif

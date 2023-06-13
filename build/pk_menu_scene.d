@@ -43,6 +43,8 @@ pk_menu_scene.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_size.h \
+ /Users/finndooley/butano/butano/include/bn_string.h \
+ /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:
@@ -88,5 +90,7 @@ pk_menu_scene.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_size.h:
+/Users/finndooley/butano/butano/include/bn_string.h:
+/Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:

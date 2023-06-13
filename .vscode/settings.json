@@ -1,9 +1,10 @@
 {
-    // "code-runner.executorMap": {
-    //     "cpp": "printf '\\e[2J\\e[3J\\e[H' && cd /Users/finndooley/Code/C++/GBA/scenes && make -j4 && echo"
-    // },
+    "code-runner.executorMap": {
+        "cpp": "cd /Users/finndooley/Code/C++/GBA/scenes && make -j4; exit;"
+    },
+    // printf '\\e[2J\\e[3J\\e[H' && echo
     "files.associations": {
         "typeinfo": "cpp"
     },
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": false
 }

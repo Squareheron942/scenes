@@ -1,0 +1,70 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "data/maps",
+        "data/maps/newpine_town",
+        "data",
+        "data/tilesets",
+        "."
+    ],
+    "fileStates": {
+        "data/maps/newpine_town/layout.tmj": {
+            "scale": 1.90185546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 4.73222079589217,
+                "y": 81.49935815147626
+            }
+        },
+        "data/maps/newpine_town/untitled.tmj": {
+            "scale": 1.90185546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 256.0657252888318,
+                "y": 256.06572528883186
+            }
+        },
+        "data/maps/newpine_town/untitled.tmx": {
+            "scale": 1.20234375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 410.86419753086415,
+                "y": 530.6302794022092
+            }
+        },
+        "data/tilesets/gMap_General.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 1
+        },
+        "data/tilesets/general.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/finndooley/Code/C++/GBA/scenes/data/tilesets",
+    "map.height": 64,
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 64,
+    "openFiles": [
+        "data/tilesets/gMap_General.tsx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "data/tilesets/gMap_General.tsx",
+        "data/tilesets/general.tsx",
+        "data/maps/newpine_town/layout.tmj",
+        "data/maps/newpine_town/untitled.tmj",
+        "data/maps/newpine_town/untitled.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}

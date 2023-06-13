@@ -45,6 +45,8 @@ pk_not_found_scene.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_size.h \
+ /Users/finndooley/butano/butano/include/bn_string.h \
+ /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h \
  /Users/finndooley/butano/butano/include/bn_point.h \
  /Users/finndooley/butano/butano/include/bn_random.h \
@@ -53,7 +55,6 @@ pk_not_found_scene.o: \
  /Users/finndooley/agbabi/include/agbabi.h \
  /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h \
  /Users/finndooley/butano/butano/include/bn_core.h \
- /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h \
  /Users/finndooley/butano/butano/include/bn_sprite_text_generator.h \
  /Users/finndooley/butano/butano/include/bn_vector.h \
@@ -68,7 +69,6 @@ pk_not_found_scene.o: \
  /Users/finndooley/butano/butano/include/bn_utf8_character.h \
  /Users/finndooley/butano/butano/include/bn_vector.h \
  /Users/finndooley/butano/butano/include/bn_sprite_ptr.h \
- /Users/finndooley/butano/butano/include/bn_string.h \
  /Users/finndooley/butano/butano/include/bn_bg_palettes.h \
  /Users/finndooley/butano/butano/include/bn_color.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/common_variable_8x16_sprite_font.h \
@@ -121,6 +121,8 @@ pk_not_found_scene.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_size.h:
+/Users/finndooley/butano/butano/include/bn_string.h:
+/Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_common.h:
 /Users/finndooley/butano/butano/include/bn_point.h:
 /Users/finndooley/butano/butano/include/bn_random.h:
@@ -129,7 +131,6 @@ pk_not_found_scene.o: \
 /Users/finndooley/agbabi/include/agbabi.h:
 /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_items_titlebg.h:
 /Users/finndooley/butano/butano/include/bn_core.h:
-/Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/butano/butano/include/bn_vblank_callback_type.h:
 /Users/finndooley/butano/butano/include/bn_sprite_text_generator.h:
 /Users/finndooley/butano/butano/include/bn_vector.h:
@@ -144,7 +145,6 @@ pk_not_found_scene.o: \
 /Users/finndooley/butano/butano/include/bn_utf8_character.h:
 /Users/finndooley/butano/butano/include/bn_vector.h:
 /Users/finndooley/butano/butano/include/bn_sprite_ptr.h:
-/Users/finndooley/butano/butano/include/bn_string.h:
 /Users/finndooley/butano/butano/include/bn_bg_palettes.h:
 /Users/finndooley/butano/butano/include/bn_color.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/common_variable_8x16_sprite_font.h:

@@ -7,11 +7,11 @@
 
 //======================================================================
 //
-//	txtpal1_bn_gfx, 24x24@4, 
+//	txtpal1_bn_gfx, 24x24@8, 
 //	+ palette 16 entries, not compressed
 //	Total size: 32 = 32
 //
-//	Time-stamp: 2023-05-25, 16:22:22
+//	Time-stamp: 2023-06-11, 20:19:48
 //	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 //	( http://www.coranac.com/projects/#grit )
 //

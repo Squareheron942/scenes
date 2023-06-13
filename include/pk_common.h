@@ -39,55 +39,51 @@ struct sav_data {
 };
 
 class common
-
 {
+    public:
+        static inline uint8_t scn_type = 0;
+        static inline uint8_t scn_tr_out = 0;
+        static inline bn::fixed scn_t_out = 0;
+        static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
+        static inline bool load_scn = true;
+        static inline uint16_t num_scn = 2;
+        static inline pk::sav_data sav;
+        static inline pk::sav_data temp_sav = { // Basic save template, has default settings
+            .check = 0,
+            .gender = false,
+            .name = bn::string_view(""),
+            .location = bn::string_view(""),
+            .position = bn::point(0, 0),
+            .random = bn::random(),
+            .settings = {
+                .txt_spd = 1, // 0-2, slow, med, fast
+                .btl_scn = true, // whether or not to have attack animations
+                .set_btl = false, // whether set battle mode or not
+                .audio_stereo = false, // whether audio is stereo
+                .btn_mode = 0, // 0: normal, 1: LR, 2: L=A
+                .frame_type = 0 // ui frame type
+            },
+            .flags = {
+                .has_sav = false,
+                .isOnTitle = true,
+                .main_sav = false,
+                .has_clk = true
+            }
+        };
 
-public:
-static inline uint8_t scn_type = 0;
-static inline uint8_t scn_tr_out = 0;
-static inline bn::fixed scn_t_out = 0;
-static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
-static inline bool load_scn = true;
-static inline uint16_t num_scn = 2;
-static inline pk::sav_data sav;
-static inline pk::sav_data temp_sav = { // Basic save template, has default settings
-    .check = 0,
-    .gender = false,
-    .name = bn::string_view(""),
-    .location = bn::string_view(""),
-    .position = bn::point(0, 0),
-    .random = bn::random(),
-    .settings = {
-        .txt_spd = 1, // 0-2, slow, med, fast
-        .btl_scn = true, // whether or not to have attack animations
-        .set_btl = false, // whether set battle mode or not
-        .audio_stereo = false, // whether audio is stereo
-        .btn_mode = 0, // 0: normal, 1: LR, 2: L=A
-        .frame_type = 0 // ui frame type
-    },
-    .flags = {
-        .has_sav = false,
-        .isOnTitle = true,
-        .main_sav = false,
-        .has_clk = true
-    }
+        constexpr static const bn::string_view names[] = {
+            bn::string_view("TITLE_SCREEN"),
+            bn::string_view("SAVE_SEL")
+        };
+
+        template <class Type>
+        static int indexOf(Type arr[], uint16_t length, Type value) {
+            for (uint16_t i = 0; i < length; i++) {
+                if (arr[i] == value) return i;
+            }
+            return -1;
+        }
 };
-
-constexpr static const bn::string_view names[] = {
-    bn::string_view("TITLE_SCREEN"),
-    bn::string_view("SAVE_SEL")
-};
-
-template <class Type>
-static int indexOf(Type arr[], uint16_t length, Type value) {
-    for (uint16_t i = 0; i < length; i++) {
-        if (arr[i] == value) return i;
-    }
-    return -1;
-}
-
-};
-
 }
 
 #endif

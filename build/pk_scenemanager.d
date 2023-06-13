@@ -45,6 +45,8 @@ pk_scenemanager.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_size.h \
+ /Users/finndooley/butano/butano/include/bn_string.h \
+ /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_save_sel.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_not_found_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h \
@@ -60,8 +62,6 @@ pk_scenemanager.o: \
  /Users/finndooley/butano/butano/include/bn_random.h \
  /Users/finndooley/butano/butano/include/bn_limits.h \
  /Users/finndooley/agbabi/include/agbabi.h \
- /Users/finndooley/butano/butano/include/bn_string.h \
- /Users/finndooley/butano/butano/include/bn_string_view.h \
  /Users/finndooley/butano/butano/include/bn_unordered_map.h \
  /Users/finndooley/butano/butano/include/bn_memory.h \
  /Users/finndooley/butano/butano/include/bn_unique_ptr.h \
@@ -121,6 +121,8 @@ pk_scenemanager.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_size.h:
+/Users/finndooley/butano/butano/include/bn_string.h:
+/Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_save_sel.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_not_found_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scene.h:
@@ -136,8 +138,6 @@ pk_scenemanager.o: \
 /Users/finndooley/butano/butano/include/bn_random.h:
 /Users/finndooley/butano/butano/include/bn_limits.h:
 /Users/finndooley/agbabi/include/agbabi.h:
-/Users/finndooley/butano/butano/include/bn_string.h:
-/Users/finndooley/butano/butano/include/bn_string_view.h:
 /Users/finndooley/butano/butano/include/bn_unordered_map.h:
 /Users/finndooley/butano/butano/include/bn_memory.h:
 /Users/finndooley/butano/butano/include/bn_unique_ptr.h:

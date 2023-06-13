@@ -46,9 +46,9 @@ pk_title_scene.o: \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h \
  /Users/finndooley/butano/butano/include/bn_size.h \
- /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/butano/butano/include/bn_string.h \
  /Users/finndooley/butano/butano/include/bn_string_view.h \
+ /Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h \
@@ -77,9 +77,9 @@ pk_title_scene.o: \
  /Users/finndooley/Code/C++/GBA/scenes/build/pk_map_weather_tables.h \
  /Users/finndooley/butano/butano/include/bn_color.h \
  /Users/finndooley/Code/C++/GBA/scenes/include/pk_seasons.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_general.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_gmap_general.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h \
- /Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h \
+ /Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_gpal_general.h \
  /Users/finndooley/butano/butano/include/bn_bpp_mode.h \
  /Users/finndooley/butano/butano/include/bn_span.h \
  /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h \
@@ -131,9 +131,9 @@ pk_title_scene.o: \
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_item.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_map_cell.h:
 /Users/finndooley/butano/butano/include/bn_size.h:
-/Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/butano/butano/include/bn_string.h:
 /Users/finndooley/butano/butano/include/bn_string_view.h:
+/Users/finndooley/Code/C++/GBA/scenes/include/pk_menu_scene.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_scenemanager.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_title_scene.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_ptr.h:
@@ -162,9 +162,9 @@ pk_title_scene.o: \
 /Users/finndooley/Code/C++/GBA/scenes/build/pk_map_weather_tables.h:
 /Users/finndooley/butano/butano/include/bn_color.h:
 /Users/finndooley/Code/C++/GBA/scenes/include/pk_seasons.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_general.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_gmap_general.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_item.h:
-/Users/finndooley/Code/C++/GBA/scenes/build/bn_regular_bg_tiles_items_txt1.h:
+/Users/finndooley/Code/C++/GBA/scenes/build/bn_bg_palette_items_gpal_general.h:
 /Users/finndooley/butano/butano/include/bn_bpp_mode.h:
 /Users/finndooley/butano/butano/include/bn_span.h:
 /Users/finndooley/butano/butano/include/bn_regular_bg_tiles_ptr.h:
