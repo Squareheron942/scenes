@@ -1,7 +1,6 @@
 #ifndef PK_SCENE_MANAGER_H
 #define PK_SCENE_MANAGER_H
 
-#include "pk_title_scene.h"
 #include "pk_scene.h"
 
 #include "bn_string_view.h"
@@ -23,6 +22,8 @@ class SceneManager {
             TRANSITION_FADE,
             TRANSITION_HBLANK,
         };
+        static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
+        static inline bool load_scn = true;
         static inline bn::unique_ptr<pk::Scene> cur_scn;
         static void load(int index); // Loads given scene based on name
         static void load(bn::string_view name); // Loads given scene based on name

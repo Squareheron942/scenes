@@ -24,7 +24,7 @@
 
 // load based on scene id number
 void pk::SceneManager::load(int index) {
-    pk::common::load_scn = false;
+    load_scn = false;
     switch (index) {
         case 0:
             pk::SceneManager::cur_scn.reset(new pk::scenes::TitleScene());
@@ -33,13 +33,10 @@ void pk::SceneManager::load(int index) {
             pk::SceneManager::cur_scn.reset(new pk::scenes::SaveSel());
             break;
         default:
-            BN_ERROR(bn::to_string<21 + sizeof(pk::common::scn_to_load)>("Scene \"") + pk::common::scn_to_load + bn::to_string<21 + sizeof(pk::common::scn_to_load)>("\" not found."));
+            BN_ERROR(bn::to_string<21 + sizeof(scn_to_load)>("Scene \"") + scn_to_load + bn::to_string<21 + sizeof(scn_to_load)>("\" not found."));
             break;
     }
     bn::core::update();
-
-    // ui_layer = cur_scn->ui_bg;
-    // if (cur_scn->has_bg) cur_bg = cur_scn->background.create_bg(0, 0);
 }
 
 /**
@@ -49,32 +46,8 @@ void pk::SceneManager::load(int index) {
  */
 void pk::SceneManager::load(bn::string_view name) {
     
-    pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
+    pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, num_scn, name));
 }
-
-
-
-// /**
-//  * @brief Loads given scene using a transition out
-//  * 
-//  * @param name Name of the scene to load
-//  * @param transition Transition to use
-//  * @param time Length of transition
-//  */
-// void pk::SceneManager::load(bn::string_view name, uint8_t transition, bn::fixed time) {
-//     bn::log(bn::to_string<18>(transition));
-    
-//     // for (int i = 0; i <= (60 * time).integer(); i++) bn::core::update();
-//     pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
-// }
-
-
-
-
-
-
-
-
 
 /**
  * @brief Tells the scene manager to load a new scene
@@ -82,8 +55,8 @@ void pk::SceneManager::load(bn::string_view name) {
  * @param name The name of the scene to load
  */
 void pk::SceneManager::set_load(bn::string_view name) {
-    pk::common::scn_to_load.swap(name);
-    pk::common::load_scn = true;
+    scn_to_load.swap(name);
+    load_scn = true;
 }
 
 /**
@@ -94,8 +67,9 @@ void pk::SceneManager::set_load(bn::string_view name) {
  * @param time The length of the transition (in seconds)
  */
 void pk::SceneManager::set_load(bn::string_view name, pk::SceneManager::transitions transition, bn::fixed time) {
-    pk::common::scn_to_load.swap(name);
-    pk::common::load_scn = true;
+
+    set_load(name);
+
     switch (transition) {
         case pk::SceneManager::transitions::NONE:
             break;

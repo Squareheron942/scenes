@@ -10,11 +10,6 @@
 namespace pk
 {
 
-struct {
-    uint8_t MENU = 0;
-    uint8_t WORLD = 1;
-} map_types;
-
 struct sav_data {
     uint8_t check;
     bool gender;
@@ -45,12 +40,6 @@ struct sav_data {
 class common
 {
     public:
-        static inline unsigned char scn_type = 0;
-        static inline unsigned char scn_tr_out = 0;
-        static inline bn::fixed scn_t_out = 0;
-        static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
-        static inline bool load_scn = true;
-        static inline unsigned short num_scn = 2;
         static inline pk::sav_data sav;
         static inline bn::point bgpos;
         static inline pk::sav_data temp_sav = { // Basic save template, has default settings

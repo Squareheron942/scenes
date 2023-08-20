@@ -7,6 +7,7 @@ def process(build_dir):
         pass
 
     total_size = 0
+    size_diff = 0
     times_dict = {}
 
     if os.stat('scene_edit_times.json').st_size == 0:
@@ -25,15 +26,16 @@ def process(build_dir):
                     try:
                         if (times_dict[os.path.basename(file)] != os.stat(os.path.join('src', 'scenes', file)).st_mtime): 
                             print('   ' + os.path.basename(file))
-                            total_size += 1
+                            size_diff += 1
                     except:
                         print('   ' + os.path.basename(file))
-                        total_size += 1
+                        size_diff += 1
                         pass
+                    total_size += 1
                     times_dict[os.path.basename(file)] = os.stat(os.path.join('src', 'scenes', file)).st_mtime
-
+            output.write('\nconst int num_scn = ' + str(total_size) + ';\n')
             output.write('\n#endif')
-            if total_size > 0:
+            if size_diff > 0:
                 print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
     with open('map_edit_times.json', 'w') as times:
         json.dump(times_dict, times)
