@@ -32,10 +32,9 @@
 
 pk::scenes::TitleScene::TitleScene() : 
     pk::Scene("Newpine Town"),
-    palette(bn::bg_palette_items::gpal_outdoors.create_palette()), 
+    map(bn::regular_bg_map_item(pk::maps::NEWPINE_TOWN::layout[0], pk::maps::NEWPINE_TOWN::map_size)),
     tiles(bn::regular_bg_tiles_ptr::create(bn::regular_bg_tiles_items::outdoors)), 
-    map(bn::regular_bg_map_item(pk::maps::NEWPINE_TOWN::layout[0], 
-    pk::maps::NEWPINE_TOWN::map_size)),
+    palette(bn::bg_palette_items::gpal_outdoors.create_palette()), 
     bg(bn::regular_bg_ptr::create(0, 0, map.create_map(tiles, palette) /*bn::regular_bg_map_ptr::create(map)*/))
 {
     pk::common::bgpos = bn::point(0, 0);

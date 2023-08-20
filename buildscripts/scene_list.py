@@ -8,13 +8,13 @@ def process(build_dir):
 
     total_size = 0
     size_diff = 0
-    times_dict = {}
+    names_dict = []
 
-    if os.stat('scene_edit_times.json').st_size == 0:
-        with open('scene_edit_times.json', 'w') as times:
-            json.dump(times_dict, times)
-    with open('map_edit_times.json', 'r') as times:
-        times_dict = json.load(times)
+    if os.stat('scene_names.json').st_size == 0:
+        with open('scene_names.json', 'w') as names:
+            json.dump(names_dict, names)
+    with open('scene_names.json', 'r') as names:
+        names_dict = json.load(names)
 
         with open(os.path.join(build_dir, 'pk_scenes_list.inc'), 'w') as output:
             output.write('#ifndef PK_SCENE_LIST_H\n')
@@ -23,22 +23,21 @@ def process(build_dir):
             for file in os.listdir(os.path.join('src', 'scenes')):
                 if os.path.isfile(os.path.join('src', 'scenes', file)): 
                     output.write('#include "' + os.path.basename(file).split('.cpp')[0] + '.h"\n')
-                    try:
-                        if (times_dict[os.path.basename(file)] != os.stat(os.path.join('src', 'scenes', file)).st_mtime): 
-                            print('   ' + os.path.basename(file))
-                            size_diff += 1
-                    except:
+                    
+                    if not os.path.basename(file) in names_dict: 
                         print('   ' + os.path.basename(file))
                         size_diff += 1
-                        pass
+                    try:
+                        names_dict[total_size] = os.path.basename(file)
+                    except:
+                        names_dict.append(os.path.basename(file))
                     total_size += 1
-                    times_dict[os.path.basename(file)] = os.stat(os.path.join('src', 'scenes', file)).st_mtime
             output.write('\nconst int num_scn = ' + str(total_size) + ';\n')
             output.write('\n#endif')
             if size_diff > 0:
                 print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
-    with open('map_edit_times.json', 'w') as times:
-        json.dump(times_dict, times)
+                with open('scene_names.json', 'w') as names:
+                    json.dump(names_dict, names)
     
 
 if __name__ == "__main__":

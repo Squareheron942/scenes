@@ -7,7 +7,6 @@ int main()
 {
     bn::core::init();
 
-
     while(true)
     {
         if (pk::SceneManager::load_scn) pk::SceneManager::load(pk::SceneManager::scn_to_load);
