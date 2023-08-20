@@ -1,25 +1,83 @@
 {
     "configurations": [
         {
-            "name": "GBA",
+            "name": "Mac",
             "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "~/butano/butano/include",
                 "${workspaceFolder}/**",
-                "/Users/finndooley/butano/butano/include"
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build",
+                "/opt/devkitPro/devkitARM/arm-none-eabi/include",
+                "/opt/devkitPro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/include"
             ],
             "defines": [],
-            "compilerPath": "/opt/devkitpro/devkitarm/bin/arm-none-eabi-gcc",
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++20",
-            "intelliSenseMode": "macos-gcc-arm",
-            "compilerArgs": [
-                "-O2", "-Wall", "-Wextra", "-Wpedantic", "-Wshadow", "-Wundef",
-                "-Wunused-parameter", "-Wmisleading-indentation",
-                "-Wduplicated-cond", "-Wduplicated-branches", "-Wlogical-op",
-                "-Wnull-dereference", "-Wswitch-default", "-Wstack-usage=16384",
-                "-ffast-math", "-ffunction-sections", "-fdata-sections",
-                "-Wuseless-cast", "-Wnon-virtual-dtor", "-Woverloaded-virtual",
-                "-fno-rtti", "-fno-exceptions"
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/include",
+                    "/opt/devkitPro/devkitARM/arm-none-eabi/include",
+                    "/opt/devkitPro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
             ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceFolder}/include"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceFolder}/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/include",
+                "E:/devkitPro/devkitARM/arm-none-eabi/include",
+                "E:/devkitPro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "ARM7",
+                "WIN32"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/include",
+                    "E:/devkitPro/devkitARM/arm-none-eabi/include",
+                    "E:/devkitPro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

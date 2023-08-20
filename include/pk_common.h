@@ -5,7 +5,7 @@
 #include "bn_point.h"
 #include "bn_random.h"
 #include "bn_fixed.h"
-#include <agbabi.h>
+// #include <agbabi.h>
 
 namespace pk
 {
@@ -27,27 +27,32 @@ struct sav_data {
         bool btl_scn; // Whether or not to use attack animations
         bool set_btl; // Whether using set battle mode or not
         bool audio_stereo; // Whether audio is stereo
+        struct {
+            bn::fixed music;
+            bn::fixed sfx;
+        } volume;
         uint8_t btn_mode; // 0: normal, 1: LR, 2: L=A
         uint8_t frame_type; // UI frame type
     } settings;
     struct {
-        bool has_sav;
+        bool has_sav; // whether the save slot has been written to
         bool isOnTitle;
-        bool main_sav;
-        bool has_clk;
+        bool main_sav; // whether this is the first or second save
+        bool set_clk; // whether or not clock has been set
     } flags;
 };
 
 class common
 {
     public:
-        static inline uint8_t scn_type = 0;
-        static inline uint8_t scn_tr_out = 0;
+        static inline unsigned char scn_type = 0;
+        static inline unsigned char scn_tr_out = 0;
         static inline bn::fixed scn_t_out = 0;
         static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
         static inline bool load_scn = true;
-        static inline uint16_t num_scn = 2;
+        static inline unsigned short num_scn = 2;
         static inline pk::sav_data sav;
+        static inline bn::point bgpos;
         static inline pk::sav_data temp_sav = { // Basic save template, has default settings
             .check = 0,
             .gender = false,
@@ -60,6 +65,10 @@ class common
                 .btl_scn = true, // whether or not to have attack animations
                 .set_btl = false, // whether set battle mode or not
                 .audio_stereo = false, // whether audio is stereo
+                .volume = {
+                    .music = bn::fixed(0.5),
+                    .sfx = bn::fixed(0.5)
+                },
                 .btn_mode = 0, // 0: normal, 1: LR, 2: L=A
                 .frame_type = 0 // ui frame type
             },
@@ -67,7 +76,7 @@ class common
                 .has_sav = false,
                 .isOnTitle = true,
                 .main_sav = false,
-                .has_clk = true
+                .set_clk = true
             }
         };
 

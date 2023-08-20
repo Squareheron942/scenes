@@ -1,14 +1,16 @@
 #ifndef PK_TITLE_SCENE2_H
 #define PK_TITLE_SCENE2_H
 
-#include "pk_menu_scene.h"
+#include "pk_scene.h"
+#include "bn_regular_bg_ptr.h"
 
 namespace pk {
     namespace scenes {
-        class SaveSel : public pk::scene_types::MenuScene {
+        class SaveSel : public pk::Scene {
             public:
             SaveSel();
-            void main();
+            void main() override;
+            bn::regular_bg_ptr bg0;
         };
     }
 }

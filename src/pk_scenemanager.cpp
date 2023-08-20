@@ -1,12 +1,12 @@
 // individual scenes
 #include "pk_title_scene.h"
 #include "pk_save_sel.h"
-#include "pk_not_found_scene.h"
 
 // utilities
 #include "pk_scene.h"
 #include "pk_scenemanager.h"
 #include "pk_common.h"
+// #include "pk_core.h"
 
 // butano stuff
 #include "bn_string_view.h"
@@ -96,7 +96,7 @@ void pk::SceneManager::set_load(bn::string_view name) {
  * @param transition The transition to use
  * @param time The length of the transition (in seconds)
  */
-void pk::SceneManager::set_load(bn::string_view name, uint8_t transition, bn::fixed time) {
+void pk::SceneManager::set_load(bn::string_view name, pk::SceneManager::transitions transition, bn::fixed time) {
     pk::common::scn_to_load.swap(name);
     pk::common::load_scn = true;
     switch (transition) {
@@ -105,9 +105,14 @@ void pk::SceneManager::set_load(bn::string_view name, uint8_t transition, bn::fi
         case pk::SceneManager::transitions::TRANSITION_FADE:
             bn::bg_palettes::set_fade_color(bn::color(0,0,0));
             bn::sprite_palettes::set_fade_color(bn::color(0, 0, 0));
-            for (int i = 0; i <= (60 * time).integer(); i++) {
+            for (int i = 0; i <= (45 * time).integer(); i++) {
                 bn::bg_palettes::set_fade_intensity(bn::fixed(i) / (time * 60));
                 bn::sprite_palettes::set_fade_intensity(bn::fixed(i) / (time * 60));
+                bn::core::update();
+            }
+            for (int i = 0; i <= (15 * time).integer(); i++) {
+                bn::bg_palettes::set_fade_intensity(1);
+                bn::sprite_palettes::set_fade_intensity(1);
                 bn::core::update();
             }
             break;

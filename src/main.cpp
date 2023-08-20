@@ -6,6 +6,7 @@
 #include "bn_fixed.h"
 #include "bn_log.h"
 #include "bn_string.h"
+#include "pk_core.h"
 
 int main()
 {
@@ -15,10 +16,11 @@ int main()
 
     while(true)
     {
-        if (pk::common::load_scn) {
-            pk::SceneManager::load(pk::common::scn_to_load);
-            pk::SceneManager::cur_scn->main();
-        }
+        if (pk::common::load_scn) pk::SceneManager::load(pk::common::scn_to_load);
+        
+        pk::SceneManager::cur_scn->main();
+
+        pk::core::update_gui();
         bn::core::update();
     }
 }

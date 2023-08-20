@@ -18,17 +18,17 @@ namespace pk {
 // Groups together all of the scene managing systems
 class SceneManager {
     public:
-        struct transitions {
-            const static uint8_t NONE = 0;
-            const static uint8_t TRANSITION_FADE = 1;
-            const static uint8_t TRANSITION_HBLANK = 2;
+        enum class transitions : unsigned char {
+            NONE,
+            TRANSITION_FADE,
+            TRANSITION_HBLANK,
         };
         static inline bn::unique_ptr<pk::Scene> cur_scn;
         static void load(int index); // Loads given scene based on name
         static void load(bn::string_view name); // Loads given scene based on name
         // static void load(bn::string_view name, uint8_t transition, bn::fixed time); // Loads given scene with a transition out and in
         static void set_load(bn::string_view name); // Loads given scene based on name
-        static void set_load(bn::string_view name, uint8_t transition, bn::fixed time); // Loads given scene with a transition out and in
+        static void set_load(bn::string_view name, transitions transition, bn::fixed time); // Loads given scene with a transition out and in
 };
 
 }

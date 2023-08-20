@@ -1,0 +1,14 @@
+{ "columns":16,
+ "image":"./images/outdoors.png",
+ "imageheight":208,
+ "imagewidth":128,
+ "margin":0,
+ "name":"Newpine Town",
+ "spacing":0,
+ "tilecount":416,
+ "tiledversion":"1.10.1",
+ "tileheight":8,
+ "tilewidth":8,
+ "type":"tileset",
+ "version":"1.10"
+}

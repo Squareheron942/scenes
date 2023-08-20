@@ -1,6 +1,6 @@
 {
     "code-runner.executorMap": {
-        "cpp": "cd /Users/finndooley/Code/C++/GBA/scenes && make -j4; exit;"
+        "cpp": "cd /Users/finndooley/Code/C++/GBA/scenes && make -j12; exit;"
     },
     // printf '\\e[2J\\e[3J\\e[H' && echo
     "files.associations": {

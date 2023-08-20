@@ -3,15 +3,31 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "data/maps/newpine_town/layout.json",
     "expandedProjectPaths": [
-        "data/maps",
+        "data/tilesets",
         "data/maps/newpine_town",
         "data",
-        "data/tilesets",
-        "."
+        ".",
+        "data/maps"
     ],
     "fileStates": {
+        "data/maps/newpine_town/Newpine Town.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "data/maps/newpine_town/Outdoors.tsj": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "data/maps/newpine_town/layout.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -24.5,
+                "y": 8.5
+            }
+        },
         "data/maps/newpine_town/layout.tmj": {
             "scale": 1.90185546875,
             "selectedLayer": 0,
@@ -36,6 +52,15 @@
                 "y": 530.6302794022092
             }
         },
+        "data/tilesets/Newpine Town.tsj": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "data/tilesets/Outdoors.tsj": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "data/tilesets/gMap_General.tsx": {
             "scaleInDock": 4,
             "scaleInEditor": 1
@@ -45,24 +70,32 @@
             "scaleInEditor": 1
         }
     },
+    "last.exportedFilePath": "/Users/finndooley/Code/C++/GBA/scenes/data/maps/newpine_town",
+    "last.externalTilesetPath": "/Users/finndooley/Code/C++/GBA/scenes/data/tilesets",
     "last.imagePath": "/Users/finndooley/Code/C++/GBA/scenes/data/tilesets",
     "map.height": 64,
+    "map.lastUsedExportFilter": "videogame map format (*.json)",
     "map.lastUsedFormat": "json",
     "map.tileHeight": 8,
     "map.tileWidth": 8,
     "map.width": 64,
     "openFiles": [
-        "data/tilesets/gMap_General.tsx"
+        "data/maps/newpine_town/layout.json"
     ],
     "project": "untitled.tiled-project",
+    "property.type": "Weathers",
     "recentFiles": [
+        "data/maps/newpine_town/layout.json",
+        "data/tilesets/Newpine Town.tsj",
+        "data/tilesets/Outdoors.tsj",
+        "data/maps/newpine_town/Newpine Town.tsj",
         "data/tilesets/gMap_General.tsx",
         "data/tilesets/general.tsx",
         "data/maps/newpine_town/layout.tmj",
         "data/maps/newpine_town/untitled.tmj",
         "data/maps/newpine_town/untitled.tmx"
     ],
-    "tileset.lastUsedFormat": "tsx",
+    "tileset.lastUsedFormat": "json",
     "tileset.tileSize": {
         "height": 8,
         "width": 8

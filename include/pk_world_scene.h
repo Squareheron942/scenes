@@ -4,6 +4,7 @@
 #include "pk_scene.h"
 
 #include "bn_regular_bg_item.h"
+#include "bn_regular_bg_ptr.h"
 #include "bn_string_view.h"
 #include "bn_camera_actions.h"
 #include "bn_point.h"
@@ -14,10 +15,10 @@ namespace pk {
     {
         class WorldScene : public pk::Scene {
             public:
-                bn::regular_bg_item bg0; // World map layer
-                bn::regular_bg_item bg1; // UI layer, only sometimes visible
-                bn::regular_bg_item bg2; // Weather layer
-                bn::regular_bg_item bg3; // Cloud layer
+                bn::regular_bg_ptr bg0; // World map layer
+                bn::regular_bg_ptr bg1; // UI layer, only sometimes visible
+                bn::regular_bg_ptr bg2; // Weather layer
+                bn::regular_bg_ptr bg3; // Cloud layer
                 bn::camera_ptr cam;
                 static uint8_t w_probs; // Int array representing the percentage chance of weather happening
                 static uint8_t weather;
