@@ -7,7 +7,7 @@ def process(build_dir):
         pass
 
     total_size = 0
-    size_diff = 0
+    size_diff = not os.path.exists('/data/build/pk_scenes_list.inc')
     names_dict = []
     out = ''
 
