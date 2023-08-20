@@ -33,7 +33,7 @@ void pk::SceneManager::load(int index) {
             pk::SceneManager::cur_scn.reset(new pk::scenes::SaveSel());
             break;
         default:
-            BN_ERROR(bn::to_string<128>("Scene \"") + pk::common::scn_to_load + bn::to_string<128>("\" not found."));
+            BN_ERROR(bn::to_string<21 + sizeof(pk::common::scn_to_load)>("Scene \"") + pk::common::scn_to_load + bn::to_string<21 + sizeof(pk::common::scn_to_load)>("\" not found."));
             break;
     }
     bn::core::update();
@@ -48,7 +48,6 @@ void pk::SceneManager::load(int index) {
  * @param name The name of the scene to load
  */
 void pk::SceneManager::load(bn::string_view name) {
-    // pk::SceneManager::load(name, pk::common::scn_transition, 1);
     
     pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, pk::common::num_scn, name));
 }
