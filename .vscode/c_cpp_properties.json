@@ -7,8 +7,6 @@
                 "/usr/local/include",
                 "~/butano/butano/include",
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include",
-                "${workspaceFolder}/build",
                 "/opt/devkitPro/devkitARM/arm-none-eabi/include",
                 "/opt/devkitPro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/include"
             ],

@@ -6,7 +6,6 @@ def process(build_dir):
     except:
         pass
 
-    map_dir = os.path.join('data', 'maps')
     total_size = 0
     times_dict = {}
 
@@ -15,6 +14,29 @@ def process(build_dir):
             json.dump(times_dict, times)
     with open('map_edit_times.json', 'r') as times:
         times_dict = json.load(times)
+
+        with open(os.path.join(build_dir, 'pk_scenes_list.inc'), 'w') as output:
+            output.write('#ifndef PK_SCENE_LIST_H\n')
+            output.write('#define PK_SCENE_LIST_H\n\n')
+
+            for file in os.listdir(os.path.join('src', 'scenes')):
+                if os.path.isfile(os.path.join('src', 'scenes', file)): 
+                    output.write('#include "' + os.path.basename(file).split('.cpp')[0] + '.h"\n')
+                    try:
+                        if (times_dict[os.path.basename(file)] != os.stat(os.path.join('src', 'scenes', file)).st_mtime): 
+                            print('   ' + os.path.basename(file))
+                            total_size += 1
+                    except:
+                        print('   ' + os.path.basename(file))
+                        total_size += 1
+                        pass
+                    times_dict[os.path.basename(file)] = os.stat(os.path.join('src', 'scenes', file)).st_mtime
+
+            output.write('\n#endif')
+            if total_size > 0:
+                print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
+    with open('map_edit_times.json', 'w') as times:
+        json.dump(times_dict, times)
     
 
 if __name__ == "__main__":

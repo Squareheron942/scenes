@@ -66,7 +66,6 @@ def process(build_dir):
                     props = map['properties']
                     wodds = get_prop_val(props, 'Weather Odds')
                     id = get_prop_val(props, 'ID')
-                    print(id)
                     flags = get_prop_val(props, 'Flags')
                     if not id in times_dict:
                         times_dict[get_prop_val(props, 'ID')] = 0

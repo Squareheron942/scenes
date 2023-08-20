@@ -1,6 +1,5 @@
 // individual scenes
-#include "pk_title_scene.h"
-#include "pk_save_sel.h"
+#include "pk_scenes_list.inc"
 
 // utilities
 #include "pk_scene.h"
@@ -34,7 +33,6 @@ void pk::SceneManager::load(int index) {
             pk::SceneManager::cur_scn.reset(new pk::scenes::SaveSel());
             break;
         default:
-            // pk::SceneManager::cur_scn.reset(new pk::scenes::NotFoundScene());
             BN_ERROR(bn::to_string<128>("Scene \"") + pk::common::scn_to_load + bn::to_string<128>("\" not found."));
             break;
     }

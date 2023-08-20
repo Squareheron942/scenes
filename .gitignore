@@ -5,3 +5,5 @@
 *.o
 *.d
 .DS_Store
+/build/
+/data/build/

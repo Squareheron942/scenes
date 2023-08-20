@@ -1,7 +1,7 @@
 #ifndef PK_WEATHER_H
 #define PK_WEATHER_H
 
-#include "pk_map_weather_tables.h"
+#include "pk_map_weather_tables.inc"
 #include "pk_weather_types.h"
 
 #include "bn_color.h"
