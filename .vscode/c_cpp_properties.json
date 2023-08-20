@@ -6,7 +6,8 @@
                 "/usr/local/include",
                 "~/butano/butano/include",
                 "${workspaceFolder}/**",
-                "/opt/devkitPro/devkitARM/arm-none-eabi/include"
+                "/opt/devkitPro/devkitARM/arm-none-eabi/include",
+                "${workspaceFolder}/data/build"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",

@@ -7,7 +7,7 @@ def process(build_dir):
         pass
 
     total_size = 0
-    size_diff = not os.path.exists('/data/build/pk_scenes_list.inc')
+    size_diff = not os.path.exists('data/build/pk_scenes_list.inc')
     names_dict = []
     out = ''
 
@@ -34,7 +34,7 @@ def process(build_dir):
                 total_size += 1
         out+='\nconst int num_scn = ' + str(total_size) + ';\n'
         out+='\n#endif'
-        if size_diff:
+        if bool(size_diff):
             print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
             with open(os.path.join(build_dir, 'pk_scenes_list.inc'), 'w') as output:
                 output.write(out)

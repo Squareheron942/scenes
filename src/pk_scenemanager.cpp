@@ -5,7 +5,7 @@
 #include "pk_scene.h"
 #include "pk_scenemanager.h"
 #include "pk_common.h"
-// #include "pk_core.h"
+#include "pk_core.h"
 
 // butano stuff
 #include "bn_string_view.h"
