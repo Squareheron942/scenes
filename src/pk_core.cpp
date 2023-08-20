@@ -2,6 +2,7 @@
 #include "pk_weather.h"
 #include "pk_seasons.h"
 
+#include "bn_core.h"
 #include "bn_random.h"
 #include "bn_fixed_point.h"
 #include "bn_format.h"

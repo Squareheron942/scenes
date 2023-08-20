@@ -9,35 +9,37 @@ def process(build_dir):
     total_size = 0
     size_diff = 0
     names_dict = []
+    out = ''
 
     if os.stat('scene_names.json').st_size == 0:
         with open('scene_names.json', 'w') as names:
             json.dump(names_dict, names)
     with open('scene_names.json', 'r') as names:
         names_dict = json.load(names)
+        out += '#ifndef PK_SCENE_LIST_H\n'+'#define PK_SCENE_LIST_H\n\n'
 
-        with open(os.path.join(build_dir, 'pk_scenes_list.inc'), 'w') as output:
-            output.write('#ifndef PK_SCENE_LIST_H\n')
-            output.write('#define PK_SCENE_LIST_H\n\n')
+        
 
-            for file in os.listdir(os.path.join('src', 'scenes')):
-                if os.path.isfile(os.path.join('src', 'scenes', file)): 
-                    output.write('#include "' + os.path.basename(file).split('.cpp')[0] + '.h"\n')
-                    
-                    if not os.path.basename(file) in names_dict: 
-                        print('   ' + os.path.basename(file))
-                        size_diff += 1
-                    try:
-                        names_dict[total_size] = os.path.basename(file)
-                    except:
-                        names_dict.append(os.path.basename(file))
-                    total_size += 1
-            output.write('\nconst int num_scn = ' + str(total_size) + ';\n')
-            output.write('\n#endif')
-            if size_diff > 0:
-                print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
-                with open('scene_names.json', 'w') as names:
-                    json.dump(names_dict, names)
+        for file in os.listdir(os.path.join('src', 'scenes')):
+            if os.path.isfile(os.path.join('src', 'scenes', file)): 
+                out+='#include "' + os.path.basename(file).split('.cpp')[0] + '.h"\n'
+                
+                if not os.path.basename(file) in names_dict: 
+                    print('   ' + os.path.basename(file))
+                    size_diff += 1
+                try:
+                    names_dict[total_size] = os.path.basename(file)
+                except:
+                    names_dict.append(os.path.basename(file))
+                total_size += 1
+        out+='\nconst int num_scn = ' + str(total_size) + ';\n'
+        out+='\n#endif'
+        if size_diff:
+            print('Compiled scenes list written to ' + os.path.join(build_dir, 'pk_scenes_list.inc'))
+            with open(os.path.join(build_dir, 'pk_scenes_list.inc'), 'w') as output:
+                output.write(out)
+            with open('scene_names.json', 'w') as names:
+                json.dump(names_dict, names)
     
 
 if __name__ == "__main__":
