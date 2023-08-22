@@ -4,6 +4,8 @@
 *.sav
 *.o
 *.d
+*.tiled-project
+*.tiled-session
 .DS_Store
 /build/
 /data/build/
