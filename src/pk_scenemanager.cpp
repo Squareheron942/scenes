@@ -42,9 +42,9 @@ void pk::SceneManager::load(int index) {
     bn::core::update();
 }
 
-bool pk::SceneManager::add(char name[], void (*createFunc)()) {
+// bool pk::SceneManager::add(char name[], void (*createFunc)()) {
 
-}
+// }
 
 /**
  * @brief Loads given scene
@@ -52,7 +52,6 @@ bool pk::SceneManager::add(char name[], void (*createFunc)()) {
  * @param name The name of the scene to load
  */
 void pk::SceneManager::load(bn::string_view name) {
-    
     pk::SceneManager::load(pk::common::indexOf<const bn::string_view>(pk::common::names, num_scn, name));
 }
 
