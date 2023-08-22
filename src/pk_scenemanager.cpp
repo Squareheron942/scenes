@@ -22,6 +22,9 @@
 #include "bn_color.h"
 #include "bn_log.h"
 
+// #define REGISTER_SCENE(sceneName, createFunc) \
+//     bool sceneName ## _entry = SceneManager::add(#sceneName, (createFunc))
+
 // load based on scene id number
 void pk::SceneManager::load(int index) {
     load_scn = false;
@@ -37,6 +40,10 @@ void pk::SceneManager::load(int index) {
             break;
     }
     bn::core::update();
+}
+
+bool pk::SceneManager::add(char name[], void (*createFunc)()) {
+
 }
 
 /**

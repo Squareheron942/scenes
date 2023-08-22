@@ -12,6 +12,7 @@
 #include "bn_regular_bg_map_item.h"
 #include "bn_fixed.h"
 #include "bn_point.h"
+#include "bn_unordered_map.h"
 
 namespace pk {
 // Groups together all of the scene managing systems
@@ -23,8 +24,10 @@ class SceneManager {
             TRANSITION_HBLANK,
         };
         static inline bn::string_view scn_to_load = bn::string_view("TITLE_SCREEN");
+        // static bn::unordered_map<char[], bool(*)(), >;
         static inline bool load_scn = true;
         static inline bn::unique_ptr<pk::Scene> cur_scn;
+        static bool add(char name[], void (*createFunc)());
         static void load(int index); // Loads given scene based on name
         static void load(bn::string_view name); // Loads given scene based on name
         // static void load(bn::string_view name, uint8_t transition, bn::fixed time); // Loads given scene with a transition out and in

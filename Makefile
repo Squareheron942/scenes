@@ -27,7 +27,7 @@
 #---------------------------------------------------------------------------------------------------------------------
 TARGET      :=  $(notdir $(CURDIR))
 BUILD       :=  build
-LIBBUTANO   :=  /Users/finndooley/butano/butano
+LIBBUTANO   :=  $(HOME)/butano/butano
 PYTHON      :=  python3
 SOURCES     :=  src data/build src/scenes
 INCLUDES    :=  include data/build include/scenes
@@ -40,8 +40,8 @@ ROMCODE     :=  SBTP
 USERFLAGS   :=  -Iinclude -O2 -Wstack-usage=16384 -ffast-math -ffunction-sections -fdata-sections -Wuseless-cast -Wnon-virtual-dtor -Woverloaded-virtual -fno-rtti -fno-exceptions
 USERASFLAGS :=  
 USERLDFLAGS :=  
-USERLIBDIRS :=  # /Users/finndooley/agbabi
-USERLIBS    :=  # /Users/finndooley/agbabi/libagbabi.a
+USERLIBDIRS :=  
+USERLIBS    :=  
 USERBUILD   :=  data/build
 EXTTOOL     :=  @$(PYTHON) -B buildscripts/make_map.py --build=$(USERBUILD) && $(PYTHON) -B buildscripts/scene_list.py --build=$(USERBUILD)
 
