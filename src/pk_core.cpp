@@ -1,6 +1,7 @@
 #include "pk_core.h"
 #include "pk_weather.h"
 #include "pk_seasons.h"
+#include "pk_common.h"
 
 #include "bn_core.h"
 #include "bn_random.h"
@@ -22,9 +23,9 @@ namespace pk::core
         unsigned char counter = 0;
     }
     bn::vector<bn::sprite_ptr, 128>* _texts = NULL;
-    void update(bn::random& rand) {
+    void update() {
         update_gui();
-        pk::weather::update(rand);
+        // pk::weather::update(rand);
         pk::seasons::update();
     };
 
@@ -34,7 +35,7 @@ namespace pk::core
                 if (_texts == NULL) _texts = new bn::vector<bn::sprite_ptr, 128>();
                 _texts->shrink(0);
                 const bn::sprite_text_generator _textGen(bn::sprite_font(bn::sprite_items::common_fixed_8x8_font));
-                const bn::fixed_point BG_SPR_POS(32, -70), CPU_POS(56, -60), IWRAM_POS(16, -50), EWRAM_POS(16, -40);
+                const bn::fixed_point BG_SPR_POS(32, -70), CPU_POS(56, -60), IWRAM_POS(16, -50), EWRAM_POS(16, -40), POS_POS(16, -30);
                 _textGen.generate(
                     BG_SPR_POS,
                     bn::format<14>("BG/SPR {}/{}", bn::bgs::used_items_count(), bn::sprites::used_items_count()),
@@ -52,6 +53,10 @@ namespace pk::core
                 _textGen.generate(
                     EWRAM_POS,
                     bn::format<14>("EW {}% {}", (bn::fixed(usedEw) / EWRAM_BYTES * 100).round_integer(), usedEw),
+                    *_texts);
+                _textGen.generate(
+                    POS_POS,
+                    bn::format<14>("POS {} {}", pk::common::playerpos.x().integer(), pk::common::playerpos.y().integer()),
                     *_texts);
             }
         }

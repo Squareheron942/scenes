@@ -3,8 +3,11 @@
 
 #include "bn_string_view.h"
 #include "bn_point.h"
+#include "bn_fixed_point.h"
 #include "bn_random.h"
 #include "bn_fixed.h"
+#include "bn_sprite_ptr.h"
+#include "bn_optional.h"
 // #include <agbabi.h>
 
 namespace pk
@@ -19,9 +22,9 @@ struct sav_data {
     bn::random random;
     struct { // The settings for the game
         uint8_t txt_spd; // 0-2: Slow, Medium, Fast
-        bool btl_scn; // Whether or not to use attack animations
-        bool set_btl; // Whether using set battle mode or not
-        bool audio_stereo; // Whether audio is stereo
+        bool btl_scn : 1; // Whether or not to use attack animations
+        bool set_btl : 1; // Whether using set battle mode or not
+        bool audio_stereo : 1; // Whether audio is stereo
         struct {
             bn::fixed music;
             bn::fixed sfx;
@@ -30,19 +33,17 @@ struct sav_data {
         uint8_t frame_type; // UI frame type
     } settings;
     struct {
-        bool has_sav; // whether the save slot has been written to
-        bool isOnTitle;
-        bool main_sav; // whether this is the first or second save
-        bool set_clk; // whether or not clock has been set
+        bool has_sav : 1; // whether the save slot has been written to
+        bool isOnTitle : 1;
+        bool main_sav : 1; // whether this is the first or second save
+        bool set_clk : 1; // whether or not clock has been set
     } flags;
 };
 
 class common
 {
     public:
-        static inline pk::sav_data sav;
-        static inline bn::point bgpos;
-        static inline pk::sav_data temp_sav = { // Basic save template, has default settings
+        static inline pk::sav_data sav, sav_templ = { // Basic save template, has default settings
             .check = 0,
             .gender = false,
             .name = bn::string_view(""),
@@ -68,6 +69,10 @@ class common
                 .set_clk = true
             }
         };
+        static inline bn::point bgpos;
+        static inline bn::fixed_point playerpos;
+        static inline bn::optional<bn::sprite_ptr> playersprite;
+        static inline char playeranimstate = 0;
 
         constexpr static const bn::string_view names[] = {
             bn::string_view("TITLE_SCREEN"),

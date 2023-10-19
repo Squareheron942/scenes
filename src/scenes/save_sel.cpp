@@ -16,31 +16,34 @@
 #include "pk_core.h"
 #include "bn_fixed_point.h"
 #include "bn_point.h"
+#include "pk_transitions.h"
 
-pk::scenes::SaveSel::SaveSel() : pk::Scene("Save Select"), bg0(bn::regular_bg_items::background.create_bg(8, 0)) {
+#include "newpine_town.h"
+
+pk::scenes::SaveSel::SaveSel() : pk::Scene("Save Select", bn::array<bn::regular_bg_ptr, 4>{bn::regular_bg_items::background.create_bg(pk::common::bgpos),bn::regular_bg_items::background.create_bg(pk::common::bgpos),bn::regular_bg_items::background.create_bg(pk::common::bgpos),bn::regular_bg_items::background.create_bg(pk::common::bgpos)}) {
 
     bn::sram::read(pk::common::sav);
-    if (!pk::common::sav.flags.has_sav) pk::common::sav = pk::common::temp_sav;
+    if (!pk::common::sav.flags.has_sav) pk::common::sav = pk::common::sav_templ;
 
     if (pk::common::sav.flags.has_sav) {
 
     } else {
         
     }
-    for (int i = 0; i < 18 /* 60 * 0.3 */; i++) {
-        bn::bg_palettes::set_fade_intensity(1 - bn::fixed(i) / (bn::fixed(0.3) * 60));
-        bn::sprite_palettes::set_fade_intensity(1 - bn::fixed(i) / (bn::fixed(0.3) * 60));
-        bn::core::update();
-    }
+    pk::transitions::TRANSITION_FADE(18, true);
 };
 
-void pk::scenes::SaveSel::main() {
-        if (bn::keypad::a_pressed()) pk::SceneManager::set_load(bn::string_view("TITLE_SCREEN"), pk::SceneManager::transitions::TRANSITION_FADE, 0.3);
+pk::scenes::SaveSel::~SaveSel() {
+    pk::transitions::TRANSITION_FADE(18, false);
+}
+
+void pk::scenes::SaveSel::update() {
+        if (bn::keypad::a_pressed()) pk::SceneManager::load<pk::scenes::NEWPINE_TOWN>();
         if (bn::keypad::up_held()) pk::common::bgpos.set_y(pk::common::bgpos.y() + 1);
         if (bn::keypad::down_held()) pk::common::bgpos.set_y(pk::common::bgpos.y() - 1);
         if (bn::keypad::right_held()) pk::common::bgpos.set_x(pk::common::bgpos.x() - 1);
         if (bn::keypad::left_held()) pk::common::bgpos.set_x(pk::common::bgpos.x() + 1);
-        bg0.set_position(pk::common::bgpos);
+        bg[0].set_position(pk::common::bgpos);
 
     // pk::SceneManager::cur_bg.value().set_position(8, 48);
     // bn::log(bn::to_string<16>("Title Screen"));

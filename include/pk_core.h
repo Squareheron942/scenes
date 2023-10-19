@@ -4,7 +4,7 @@
 #include "bn_random.h"
 
 namespace pk::core {
-    void update(bn::random& rand);
+    void update();
     void update_gui();
 }
 

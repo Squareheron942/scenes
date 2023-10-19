@@ -9,8 +9,8 @@ namespace pk {
         class SaveSel : public pk::Scene {
             public:
             SaveSel();
-            void main() override;
-            bn::regular_bg_ptr bg0;
+            ~SaveSel();
+            void update() override;
         };
     }
 }

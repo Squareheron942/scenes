@@ -6,21 +6,25 @@
 #include "bn_bg_palette_ptr.h"
 #include "bn_regular_bg_ptr.h"
 #include "pk_scene.h"
-
+#include "pk_task.h"
+#include "bn_fixed.h"
+#include "bn_array.h" 
+#include "bn_sprite_ptr.h"
 
 namespace pk {
     namespace scenes {
-        class TitleScene : public pk::Scene {
+        class NEWPINE_TOWN : public pk::Scene {
             public:
-            TitleScene();
-            ~TitleScene() {}
+            NEWPINE_TOWN();
+            ~NEWPINE_TOWN();
 
-            void main() override;
+            void update() override;
 
-            bn::regular_bg_map_item map;
+            bn::array<bn::regular_bg_map_item, 4> map;
             bn::regular_bg_tiles_ptr tiles;
             bn::bg_palette_ptr palette;
-            bn::regular_bg_ptr bg;
+            static inline bn::fixed playerX = 0, playerY = 0;
+            pk::Task movePlayerRight, movePlayerUp, movePlayerLeft, movePlayerDown;
         };
     }
 }

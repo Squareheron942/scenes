@@ -1,17 +1,24 @@
 #include "bn_core.h"
 
 #include "pk_scenemanager.h"
+#include "pk_taskmanager.h"
 #include "pk_core.h"
+
+
+#include "newpine_town.h"
+#include "bn_random.h"
 
 int main()
 {
     bn::core::init();
+    bn::random rand;
+
+    pk::SceneManager::load<pk::scenes::NEWPINE_TOWN>();
 
     while(true)
-    {
-        if (pk::SceneManager::load_scn) pk::SceneManager::load(pk::SceneManager::scn_to_load);
-        
-        pk::SceneManager::cur_scn->main();
+    {   
+        pk::TaskManager::update();
+        pk::SceneManager::cur_scn->update();
 
         pk::core::update_gui();
         bn::core::update();

@@ -1,15 +1,15 @@
 import os, sys, argparse, json
 
 def to_map_cell(c): # input: 32 bit int, output 16 bit conversion (last 2 bits are v and h flip)
+    if c == 0: return 0
     n = c & 0xffff
     flip_h = bool(c & 0x80000000)
     flip_v = bool(c & 0x40000000)
     if flip_h:
-        n |= 0x8000
+        n |= 0x400
     if flip_v:
-        n |= 0x4000
+        n |= 0x800
     return n - 1
-
 def to_right_order(map, width, height):
     out_map = [1] * (width * height)
     for i in range(0, width * height):
@@ -18,13 +18,11 @@ def to_right_order(map, width, height):
         sbb = (y//32)*(width//32) + (x//32)
         out_map[sbb*1024 + (y%32)*32 + x%32] = map[i]
     return out_map
-
 def get_prop_val(properties, name):
     for prop in properties:
         if prop['name'] == name:
             return prop['value']
     return "not found"
-
 def process(build_dir):
     try:
         os.mkdir(build_dir)
@@ -48,10 +46,8 @@ def process(build_dir):
         map_out += '#ifndef PK_MAP_WEATHER_TABLES_H\n'
         map_out += '#define PK_MAP_WEATHER_TABLES_H\n'
         map_out += '\n'
-        map_out += '#include "bn_core.h"'
-        map_out += '\n'
         map_out += 'namespace pk::weather {\n'
-        map_out += '    const uint8_t map_tables[][6] = {\n'
+        map_out += '    const unsigned char map_tables[][6] = {\n'
 
         num_maps = 0
 
@@ -62,7 +58,6 @@ def process(build_dir):
                 
                 try: map = json.load(open(os.path.join(map_dir, dir, 'layout.json')))
                 except: continue
-                
                 
                 props = map['properties']
                 wodds = get_prop_val(props, 'Weather Odds')
@@ -76,7 +71,12 @@ def process(build_dir):
                 output_header_path = os.path.join(build_dir, "pk_map_items_" + id.split('MAP_')[1].lower() + '.h')
 
                 # removes any illegal background maps
-                if not (map['height'] % 32 == 0 and map['width'] % 32 == 0): continue
+                if not map['height'] % 32 == 0: 
+                    print("Invalid map height: " + map['height'] + " - 32")
+                    continue
+                if not map['width'] % 32 == 0: 
+                    print("Invalid map width: " + map['width'] + " - 32")
+                    continue
 
                 map_out += '        {' + (', '.join(str(wodds[c]) for c in wodds))
 
@@ -87,7 +87,7 @@ def process(build_dir):
                 # compare last modified time to previous time script run, recreate header if it was
                 if not (times_dict[id] != os.stat(os.path.join(map_dir, dir, 'layout.json')).st_mtime or not os.path.exists(os.path.join(build_dir, 'pk_map_items_' + id.split('MAP_')[1].lower() + '.h'))): continue
                 map_changes += 1
-                with open(output_header_path, 'w') as output_source:
+                with open(output_header_path, 'w') as output_source:    
                     output_source.write('#ifndef ' + id + '_H' + '\n')
                     output_source.write('#define ' + id + '_H' + '\n\n')
                     output_source.write('#include "bn_music_items.h"\n')
@@ -115,12 +115,10 @@ def process(build_dir):
                     output_source.write('   const pk::weather::types default_weather = pk::weather::types::' + get_prop_val(props, 'Default Weather') + ';\n')
                     output_source.write('   const pk::seasons::types default_season = pk::seasons::types::' + get_prop_val(props, 'Default Season') + ';\n')
                     output_source.write('\n')
-                    output_source.write('   const unsigned short layout[] = {0')
-                    # return
-                    # print(to_right_order(map['layers'][0]['data'], map['width'], map['height']))
-
-                    output_source.write((','.join(str(to_map_cell(c)) for c in to_right_order(map['layers'][0]['data'], map['width'], map['height']))))
-                    output_source.write('};\n')
+                    for i in range(len(map['layers'])):
+                        output_source.write(f'   const unsigned short layout{i}[] = {{')
+                        output_source.write((','.join(str(to_map_cell(c)) for c in to_right_order(map['layers'][i]['data'], map['width'], map['height']))))
+                        output_source.write('};\n')
                     output_source.write('\n')
                     output_source.write('}\n')
                     output_source.write('#endif')
